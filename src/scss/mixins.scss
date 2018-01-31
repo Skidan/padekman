@@ -1,0 +1,16 @@
+.icon {
+	display: block;
+	margin: 0 auto;
+	width: 128px;
+	height: 128px;
+	background-image: url(../img/logo.svg);
+	background-size: contain;
+	@media screen and (min-width: 1201px) {
+		width: 156px;
+		height: 156px;
+	}
+	@media screen and (min-width: 1601px) {
+		width: 192px;
+		height: 192px;
+	}
+}

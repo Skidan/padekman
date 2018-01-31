@@ -1,0 +1,39 @@
+//Modifiers
+.noscroll {
+  overflow-y: hidden;
+}
+.scroll {
+  overflow-y: auto;
+}
+.menuheight {
+  height: 292px;
+}
+
+
+// colors depending on section bg
+.bg-dark {
+  background-color: $color-dark;
+  color: $color-neutral;
+  & span {
+    color: $color-bg;
+  }
+  & h3 {
+    color: $color-bg;
+  }
+  & p {
+    color: $color-neutral;
+  }
+}
+.bg-light {
+  background-color: $color-bg;
+  color: $color-neutral;
+  & span {
+    color: $color-dark;
+  }
+  & h3 {
+    color: $color-dark;
+  }
+  & p {
+    color: $color-neutral;
+  }
+}

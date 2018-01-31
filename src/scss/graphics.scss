@@ -1,0 +1,112 @@
+// LOGO
+#svg {
+	width: $basic * 2.5;
+	height: $basic * 2.5;
+	padding: $basic * .25 0;
+	//outline: $test;
+	@media screen and (min-width: 1201px) {
+		width: $basic * 3;
+		height: $basic * 3;
+		padding: $basic * .5 0;
+	}
+}
+.logofill {
+	fill: $color-bg;
+}
+
+// HAMBURGER
+//button styles
+.menu_icon_dash {
+  fill: $color-bg;
+  transform-origin: 50% 50%;
+  opacity: 100;
+  transition: transform .3s, opacity .3s;
+}
+#menu_icon {
+  border-radius: 10%;
+	width: $basic * 2.5;
+	height: $basic * 2.5;
+	padding: $basic * .25 0;
+	//outline: $test;
+}
+#menu_icon:hover {
+  cursor: pointer;
+  .menu_icon_dash {
+    fill: $color-main;
+  }
+}
+.menuexpanded {
+  #dash_top {
+    transform: translateY(190%) rotate(45deg);
+  }
+  #dash_bottom {
+    transform: translateY(-190%) rotate(135deg);
+  }
+  #dash_middle {
+    transform: rotate(135deg);
+    opacity: 0;
+  }
+}
+
+// modifiers for icon mixin
+.lost {
+  background-image: url(../img/lost.svg) !important;
+}
+.found {
+  background-image: url(../img/found.svg) !important;
+}
+.cruelty {
+  background-image: url(../img/cruelty.svg) !important;
+}
+.catpaw {
+  background-image: url(../img/catpaw.svg) !important;
+}
+.dogpaw {
+  background-image: url(../img/dogpaw.svg) !important;
+}
+.house {
+  background-image: url(../img/house.svg) !important;
+}
+
+#mouse {
+	width: $basic * 3;
+  height: $basic * 3;
+  @media screen and (min-width: 1201px) {
+    width: $basic * 4;
+    height: $basic * 4;
+  }
+}
+#arrow_bottom {
+  fill:#10b0ca;
+  opacity: 0;
+  animation-name: scrollable;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+}
+#arrow_middle {
+  fill:#10b0ca;
+  opacity: 0;
+  animation-name: scrollable;
+  animation-duration: 2s;
+  animation-delay: .25s;
+  animation-iteration-count: infinite;
+}
+#arrow_top {
+  fill:#10b0ca;
+  opacity: 0;
+  animation-name: scrollable;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollable {
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,33 @@
+header#header
+	nav#navbar.container
+		.mobile-hide
+			#lang
+				select#lang_select
+					option(selected)#en EN
+					option#ru RU
+					option#lt LT
+			#search
+				form(action="")#search_form
+					input(type="text")#search_input
+					button(type="submit")#search_button
+						i.fa.fa-search
+			#mainmenu
+				ul#mainmenu_list
+					li.mainmenu_item
+						a(href="#" target="_self").mainmenu_link.mainmenu_link__active About us
+					li.mainmenu_item
+						a(href="##" target="_self").mainmenu_link Fosterlings
+					li.mainmenu_item
+						a(href="###" target="_self").mainmenu_link Charity
+					li.mainmenu_item
+						a(href="####" target="_self").mainmenu_link Articles
+		.mobile-show
+			#menu_btn
+				button(type="button")
+					include ../img/menu_btn
+			#logo
+				a(href="#####" target="_self")#logolink
+					#logosvg
+						include ../img/logo
+					#logoname
+						span.logoname Padėk Man
