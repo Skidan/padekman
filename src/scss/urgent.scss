@@ -31,15 +31,11 @@
 .urgent-container {
 	display: flex;
 	flex-direction: row;
-	//outline: $test;
 }
 .urgent-center {
 	flex-grow: 1;
-	//outline: $test;
 }
 .urgent-left, .urgent-right {
-	//width: $basic * 4;
-	//outline: $test;
 	flex-basis: $basic * 4;
 	flex-grow: 0;
 	flex-shrink: 0;
@@ -47,8 +43,6 @@
 }
 .urgent-post_carousel {
 	position: relative;
-	//padding: 0 $basic * 4;
-	//background: darken($color-bg, 10%);
 }
 .urgent-post_img {
 	position: relative;
@@ -64,7 +58,6 @@
 }
 .image-inside {
 	position: absolute;
-	//width: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -73,5 +66,5 @@
 	background-size: cover;
 	background-position: center center;
 }
-.urgent-post_heading {}
-.urgent-post_descr {}
+//.urgent-post_heading {}
+//.urgent-post_descr {}

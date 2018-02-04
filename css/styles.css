@@ -198,34 +198,19 @@
   height: 64px;
 }
 
-.arrow:hover .arrow-circle {
-  fill: #10b0ca;
-}
-
-.arrow:hover .arrow-arrow {
-  fill: #ebebeb;
-}
-
-.arrow:active .arrow-circle {
-  fill: #da4453;
-}
-
-.arrow:active .arrow-arrow {
-  fill: #ebebeb;
-}
-
-.arrow-circle {
-  fill: #ebebeb;
-  -webkit-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-}
-
 .arrow-arrow {
   fill: #da4453;
   -webkit-transition: all .15s ease-in-out;
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+}
+
+#urgent #arrow-left:hover #urgent .urgent-left {
+  background-color: #d2d2d2;
+}
+
+#urgent #arrow-left:hover .arrow-arrow {
+  fill: #ebebeb;
 }
 
 a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input {
@@ -339,15 +324,15 @@ a:focus {
 }
 
 button {
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-appearance: none;
   background: none;
   display: block;
   line-height: 0;
   padding: 0;
   margin: 0;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 figure {

@@ -114,31 +114,11 @@
 .arrow {
   cursor: pointer;
   margin: auto auto;
-  //outline: $test;
   width: $basic * 4;
   height: $basic * 4;
-  &:hover {
-    .arrow-circle {
-      fill: $color-main;
-    }
-    .arrow-arrow {
-      fill: $color-bg;
-    }
-  }
-  &:active {
-    .arrow-circle {
-      fill: $color-contrast;
-    }
-    .arrow-arrow {
-      fill: $color-bg;
-    }
-  }
-}
-.arrow-circle {
-  fill: $color-bg;
-  transition: all .15s ease-in-out;
 }
 .arrow-arrow {
   fill: $color-contrast;
   transition: all .15s ease-in-out;
 }
+
