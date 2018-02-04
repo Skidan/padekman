@@ -81,6 +81,8 @@ hr {
 p {
 	font-family: $font-regular;
 	color: $color-dark;
+	line-height: $basic * 1.5;
+	text-indent: $basic;
 }
 
 a {

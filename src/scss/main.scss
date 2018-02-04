@@ -15,6 +15,12 @@
 }
 @import "topper";
 
+#feedback {
+  @media screen and (min-width: 769px) {
+		padding: $basic * 3 0;
+	}
+}
+
 @import "urgent";
 
 @import "charity";

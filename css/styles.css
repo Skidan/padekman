@@ -298,6 +298,8 @@ hr {
 p {
   font-family: "Roboto", sans-serif;
   color: #3b4044;
+  line-height: 24px;
+  text-indent: 16px;
 }
 
 a {
@@ -934,6 +936,18 @@ span {
   }
 }
 
+@media screen and (min-width: 769px) {
+  #feedback {
+    padding: 48px 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #urgent {
+    padding: 48px 0;
+  }
+}
+
 .bg-urgent {
   color: #a0a0a0;
 }
@@ -1021,6 +1035,97 @@ span {
   background-image: url(../img/cat-shake-hands.jpg);
   background-size: cover;
   background-position: center center;
+}
+
+#charity {
+  background-color: #3b4044;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 769px) {
+  #charity {
+    background-image: url(../img/charitybg1440.jpg);
+    padding: 48px 0;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  #charity {
+    background-image: url(../img/charitybg1920.jpg);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  #charity {
+    background-image: url(../img/charitybg4k.jpg);
+  }
+}
+
+#charity .pad {
+  display: block;
+}
+
+@media screen and (min-width: 769px) {
+  #charity .pad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: rgba(59, 64, 68, 0.8);
+    border-top: 4px solid #10b0ca;
+    border-bottom: 4px solid #10b0ca;
+    -webkit-box-shadow: 0 16px 32px rgba(59, 64, 68, 0.5);
+    box-shadow: 0 16px 32px rgba(59, 64, 68, 0.5);
+  }
+}
+
+.charity-btn {
+  display: block;
+  margin: 16px auto;
+  background: #10b0ca;
+  color: #ebebeb;
+  line-height: 16px;
+  padding: 8px 32px;
+  border-radius: 4px;
+}
+
+.list-enchanced_item {
+  padding: 8px;
+}
+
+@media screen and (min-width: 769px) {
+  .list-enchanced_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.description {
+  border-bottom: 4px solid #10b0ca;
+}
+
+@media screen and (min-width: 769px) {
+  .description {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #map {
+    padding: 48px 0;
+  }
 }
 
 .map-container {
