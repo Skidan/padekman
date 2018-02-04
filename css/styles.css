@@ -874,7 +874,6 @@ span {
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
-  outline: 1px dashed red;
 }
 
 .bot-left {
@@ -896,6 +895,32 @@ span {
   .bot-middle {
     width: 64px;
   }
+}
+
+.bg-urgent {
+  color: #a0a0a0;
+}
+
+.bg-urgent span {
+  color: #da4453;
+}
+
+.bg-urgent h2 {
+  color: #da4453;
+}
+
+.bg-urgent p {
+  color: #a0a0a0;
+}
+
+.urgent-btn {
+  display: block;
+  margin: 16px auto;
+  background: #da4453;
+  color: #ebebeb;
+  line-height: 16px;
+  padding: 8px 32px;
+  border-radius: 4px;
 }
 
 #footer {

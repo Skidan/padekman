@@ -1,0 +1,24 @@
+.bg-urgent {
+  color: $color-neutral;
+  & span {
+    color: $color-contrast;
+  }
+  & h2 {
+    color: $color-contrast;
+  }
+  & p {
+    color: $color-neutral;
+  }
+}
+
+.urgent-btn {
+	display: block;
+	margin: $basic auto;
+	background: $color-contrast;
+	color: $color-bg;
+	line-height: $basic;
+	padding: $basic / 2 $basic * 2;
+	border-radius: $basic / 4;
+
+	//outline: $test;
+}
