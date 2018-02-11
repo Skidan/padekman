@@ -205,14 +205,6 @@
   transition: all .15s ease-in-out;
 }
 
-#urgent #arrow-left:hover #urgent .urgent-left {
-  background-color: #d2d2d2;
-}
-
-#urgent #arrow-left:hover .arrow-arrow {
-  fill: #ebebeb;
-}
-
 a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input {
   font-size: 16px;
 }
@@ -564,36 +556,36 @@ span {
   }
 }
 
-#mainmenu_list {
+#mainmenu ul {
   display: block;
   padding: 0;
 }
 
-.mainmenu_item {
+#mainmenu li {
   display: block;
 }
 
-.mainmenu_item a {
+#mainmenu li a {
   border-bottom: 1px solid #a0a0a0;
 }
 
-.mainmenu_item:last-child a {
+#mainmenu li:last-child a {
   border-bottom: 1px solid #3b4044;
 }
 
 @media screen and (min-width: 769px) {
-  .mainmenu_item {
+  #mainmenu li {
     display: inline-block;
   }
-  .mainmenu_item a {
+  #mainmenu li a {
     border-bottom: none;
   }
-  .mainmenu_item:last-child a {
+  #mainmenu li:last-child a {
     border-bottom: none;
   }
 }
 
-.mainmenu_link {
+#mainmenu a {
   display: block;
   line-height: 48px;
   font-family: "Roboto", sans-serif;
@@ -601,25 +593,32 @@ span {
   text-align: left;
 }
 
-.mainmenu_link:hover {
+#mainmenu a:hover {
   background-color: #a0a0a0;
   color: #ebebeb;
   text-decoration: underline;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  .mainmenu_link {
+  #mainmenu a {
     font-size: 16px;
     padding: 0 8px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .mainmenu_link {
+  #mainmenu a {
     font-size: 24px;
     padding: 0 16px;
     line-height: 64px;
   }
+}
+
+.current-menu-item {
+  outline: none;
+  text-shadow: 0 0 8px #10b0ca;
+  color: #10b0ca !important;
+  text-decoration: none;
 }
 
 .mobile-show {

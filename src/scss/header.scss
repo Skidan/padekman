@@ -98,11 +98,11 @@
 		text-align: center;
 	}
 }
-#mainmenu_list {
+#mainmenu ul {
 	display: block;
 	padding: 0;
 }
-.mainmenu_item {
+#mainmenu li {
 	display: block;
 	& a {
 		border-bottom: 1px solid $color-neutral;
@@ -120,7 +120,7 @@
 		}
 	}
 }
-.mainmenu_link {
+#mainmenu a {
 	display: block;
 	line-height: $basic * 3;
 	font-family: $font-regular;
@@ -141,7 +141,12 @@
 		line-height: $basic * 4;
 	}
 }
-.mainmenu_link__active {}
+.current-menu-item {
+	outline: none;
+	text-shadow: 0 0 $basic/2 $color-main;
+	color: $color-main !important;
+	text-decoration: none;
+}
 
 // always shown
 .mobile-show {
