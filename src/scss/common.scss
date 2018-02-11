@@ -90,13 +90,14 @@ a {
 	text-decoration: none;
 	text-shadow: none;
 	transition: color .2s, text-shadow .2s;
-	&:link {
+	color: $color-main;
+	/*&:link {
 		color: $color-main;
 	}
 	&:visited {
 		color: darken($color-main, 10%);
 		text-decoration: none;
-	}
+	}*/
 	&:hover {
 		color: $color-bg;
 		text-decoration: none;

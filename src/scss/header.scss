@@ -129,7 +129,7 @@
 	&:hover {
 		background-color: $color-neutral;
 		color: $color-bg;
-		text-decoration: underline;
+		//text-decoration: underline;
 	}
 	@media screen and (min-width: 769px) and (max-width: 1200px) {
 		font-size: $basic;
@@ -143,8 +143,8 @@
 }
 .current-menu-item {
 	outline: none;
-	text-shadow: 0 0 $basic $color-main !important;
-	color: $color-main !important;
+	text-shadow: 0 0 $basic $color-main;
+	color: $color-main;
 	text-decoration: none;
 }
 

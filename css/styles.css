@@ -286,20 +286,19 @@ a {
   -webkit-transition: color .2s, text-shadow .2s;
   -o-transition: color .2s, text-shadow .2s;
   transition: color .2s, text-shadow .2s;
+  color: #10b0ca;
+  /*&:link {
+		color: $color-main;
+	}
+	&:visited {
+		color: darken($color-main, 10%);
+		text-decoration: none;
+	}*/
   /*&:focus {
 		outline: none;
 		text-shadow: 0 0 $basic/2 $color-main;
 		color: $color-bg;
 	}*/
-}
-
-a:link {
-  color: #10b0ca;
-}
-
-a:visited {
-  color: #0c879b;
-  text-decoration: none;
 }
 
 a:hover {
@@ -595,7 +594,6 @@ span {
 #mainmenu a:hover {
   background-color: #a0a0a0;
   color: #ebebeb;
-  text-decoration: underline;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -615,8 +613,8 @@ span {
 
 .current-menu-item {
   outline: none;
-  text-shadow: 0 0 16px #10b0ca !important;
-  color: #10b0ca !important;
+  text-shadow: 0 0 16px #10b0ca;
+  color: #10b0ca;
   text-decoration: none;
 }
 
