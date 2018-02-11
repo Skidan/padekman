@@ -286,6 +286,11 @@ a {
   -webkit-transition: color .2s, text-shadow .2s;
   -o-transition: color .2s, text-shadow .2s;
   transition: color .2s, text-shadow .2s;
+  /*&:focus {
+		outline: none;
+		text-shadow: 0 0 $basic/2 $color-main;
+		color: $color-bg;
+	}*/
 }
 
 a:link {
@@ -307,12 +312,6 @@ a:active {
   text-shadow: 0 0 8px #10b0ca;
   color: #ebebeb;
   text-decoration: none;
-}
-
-a:focus {
-  outline: none;
-  text-shadow: 0 0 8px #10b0ca;
-  color: #ebebeb;
 }
 
 button {
