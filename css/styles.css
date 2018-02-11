@@ -616,7 +616,7 @@ span {
 
 .current-menu-item {
   outline: none;
-  text-shadow: 0 0 8px #10b0ca;
+  text-shadow: 0 0 16px #10b0ca !important;
   color: #10b0ca !important;
   text-decoration: none;
 }

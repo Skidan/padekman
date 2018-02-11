@@ -143,7 +143,7 @@
 }
 .current-menu-item {
 	outline: none;
-	text-shadow: 0 0 $basic/2 $color-main;
+	text-shadow: 0 0 $basic $color-main !important;
 	color: $color-main !important;
 	text-decoration: none;
 }
