@@ -1322,6 +1322,25 @@ span {
   text-align: left;
 }
 
+#pagetop {
+  background-color: #ebebeb;
+}
+
+.pagetitle {
+  font-size: 64px;
+  line-height: 96px;
+  padding-top: 96px;
+}
+
+.subheading {
+  font-size: 24px;
+  text-indent: 0;
+  color: #a0a0a0;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 48px;
+}
+
 .noscroll {
   overflow-y: hidden;
 }

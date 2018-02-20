@@ -1,0 +1,17 @@
+#pagetop {
+  background-color: $color-bg;
+}
+
+.pagetitle {
+	font-size: $basic * 4;
+	line-height: $basic * 6;
+  padding-top: $basic * 6;
+}
+.subheading {
+	font-size: $basic * 1.5;
+	text-indent: 0;
+	color: $color-neutral;
+	padding: 0;
+	margin: 0;
+	padding-bottom: $basic * 3;
+}
