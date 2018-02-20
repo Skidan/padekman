@@ -611,7 +611,7 @@ span {
   }
 }
 
-.current-menu-item {
+.current-menu-item a {
   outline: none;
   text-shadow: 0 0 16px #10b0ca;
   color: #10b0ca;

@@ -141,7 +141,7 @@
 		line-height: $basic * 4;
 	}
 }
-.current-menu-item {
+.current-menu-item a {
 	outline: none;
 	text-shadow: 0 0 $basic $color-main;
 	color: $color-main;
