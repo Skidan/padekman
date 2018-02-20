@@ -1295,7 +1295,21 @@ span {
   }
 }
 
-.lnkout::after {
+.lnkout li {
+  text-align: left;
+}
+
+.lnkout a {
+  line-height: 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .lnkout a {
+    line-height: 24px;
+  }
+}
+
+.lnkout a::after {
   content: "\f08e";
   font-family: FontAwesome;
   padding: 0 4px;

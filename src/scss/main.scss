@@ -127,13 +127,20 @@
 	}
 }
 
-.lnkout {
+.lnkout li {
+  text-align: left;
+}
+.lnkout a {
+  line-height: $basic * 2.5;
+  @media screen and (min-width: 769px) {
+    line-height: $basic * 1.5;
+  }
 	&::after {
 		content:"\f08e";
 		font-family: FontAwesome;
 		padding: 0 $basic / 4;
 		font-size: $basic/4*3;
-		vertical-align: top;
+    vertical-align: top;
 	}
 }
 .requisits span {
