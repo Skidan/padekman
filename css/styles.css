@@ -1323,7 +1323,7 @@ span {
 }
 
 #pagetop {
-  background-color: #ebebeb;
+  background-color: #dedede;
 }
 
 .pagetitle {
@@ -1338,7 +1338,35 @@ span {
   color: #a0a0a0;
   padding: 0;
   margin: 0;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
+}
+
+.metabox {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.metabox-home, .metabox-main {
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.metabox-home {
+  color: #ebebeb;
+  background-color: #10b0ca;
+}
+
+.metabox-main {
+  color: #ebebeb;
+  background-color: #a0a0a0;
 }
 
 .noscroll {

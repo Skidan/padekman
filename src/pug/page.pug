@@ -7,12 +7,14 @@ html(lang="en")
 			include header
 			main#main
 				include pagetop
-				//- include feedback
-				//- include urgent
-				//- include charity
-				//- include map
+				section#content
+					.container
+						.metabox
+							a(href="#").metabox-home #[i(aria-hidden="true").fa.fa-home] Back to Home
+							span.metabox-main Our History
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates modi tempora perferendis eius, ad tenetur pariatur fugit velit quae quibusdam facere nobis exercitationem illo ratione, iure cumque, explicabo vero! Beatae facere nisi, facilis minus corporis atque. Neque illum in perspiciatis libero assumenda fuga accusamus?
 			include footer
 			//- #modal
 			//- 	#modal-window
-			//- 			p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quis!
+			//- 		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quis!
 		include scripts

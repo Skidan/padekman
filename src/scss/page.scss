@@ -1,5 +1,5 @@
 #pagetop {
-  background-color: $color-bg;
+  background-color: darken($color-bg, 5%);
 }
 
 .pagetitle {
@@ -13,5 +13,27 @@
 	color: $color-neutral;
 	padding: 0;
 	margin: 0;
-	padding-bottom: $basic * 3;
+	padding-bottom: $basic * 2;
+}
+
+.metabox {
+	display: inline-block;
+	vertical-align: top;
+	transform: translateY(-50%);
+	border-radius: $basic / 2;
+	overflow: hidden;
+	box-shadow: 0 0 $basic / 2 rgba(0,0,0,.4);
+}
+.metabox-home, .metabox-main {
+	padding: $basic/2 $basic;
+	font-size: $basic;
+	line-height: $basic * 2;
+}
+.metabox-home {
+	color: $color-bg;
+	background-color: $color-main;
+}
+.metabox-main {
+	color: $color-bg;
+	background-color: $color-neutral;
 }
