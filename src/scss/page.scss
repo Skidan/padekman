@@ -59,3 +59,40 @@
 	color: $color-bg;
 	background-color: $color-neutral;
 }
+
+#content-box {
+	display: flex;
+	flex-direction: row;
+}
+.page-navigation {
+	order: 2;
+	flex-basis: 180px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.content-posts {
+	order: 1;
+	flex-grow: 1;
+}
+
+.page-navigation {
+	margin-bottom: $basic;
+	margin-left: $basic;
+	border-radius: $basic / 2;
+	overflow: hidden;
+	box-shadow: 0 0 $basic / 2 rgba(0,0,0,.4);
+}
+.page-navigation-home, .page-navigation-box li a {
+	display: block;
+	padding: $basic / 2 $basic;
+	color: $color-bg;
+	// outline: $test;
+}
+.page-navigation-home {
+	background-color: $color-main;
+}
+.page-navigation-box li a {
+	text-indent: $basic;
+	background-color: $color-neutral;
+	border-bottom: 1px solid lighten($color-neutral, 10%);
+}

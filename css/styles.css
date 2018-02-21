@@ -1401,6 +1401,63 @@ span {
   background-color: #a0a0a0;
 }
 
+#content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.page-navigation {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  -ms-flex-preferred-size: 180px;
+  flex-basis: 180px;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.content-posts {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.page-navigation {
+  margin-bottom: 16px;
+  margin-left: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.page-navigation-home, .page-navigation-box li a {
+  display: block;
+  padding: 8px 16px;
+  color: #ebebeb;
+}
+
+.page-navigation-home {
+  background-color: #10b0ca;
+}
+
+.page-navigation-box li a {
+  text-indent: 16px;
+  background-color: #a0a0a0;
+  border-bottom: 1px solid #bababa;
+}
+
 .noscroll {
   overflow-y: hidden;
 }
