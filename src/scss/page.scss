@@ -1,28 +1,50 @@
 #pagetop {
-  background-color: darken($color-bg, 5%);
+	@media screen and (min-width: 769px) {
+		background-color: darken($color-bg, 5%);
+	}
 }
 
 .pagetitle {
-	font-size: $basic * 4;
-	line-height: $basic * 6;
-  padding-top: $basic * 6;
+	font-size: $basic * 3;
+	line-height: $basic * 4;
+	text-align: center;
+	// outline: $test;
+	@media screen and (min-width: 769px) {
+		text-align: left;
+		font-size: $basic * 4;
+		line-height: $basic * 6;
+		padding-top: $basic * 6;
+	}
 }
 .subheading {
-	font-size: $basic * 1.5;
 	text-indent: 0;
 	color: $color-neutral;
+	font-size: $basic * 1.25;
+	line-height: $basic * 2;
+	text-align: center;
+	// outline: 1px solid orange;
 	padding: 0;
 	margin: 0;
-	padding-bottom: $basic * 2;
+	padding-bottom: $basic;
+	@media screen and (min-width: 589px) {
+		padding-bottom: $basic * 2;
+	}
+	@media screen and (min-width: 769px) {
+		font-size: $basic * 1.5;
+		text-align: left;
+	}
 }
 
 .metabox {
-	display: inline-block;
-	vertical-align: top;
-	transform: translateY(-50%);
-	border-radius: $basic / 2;
-	overflow: hidden;
-	box-shadow: 0 0 $basic / 2 rgba(0,0,0,.4);
+	display: none;
+	@media screen and (min-width: 589px) {
+		display: inline-block;
+		vertical-align: top;
+		transform: translateY(-50%);
+		border-radius: $basic / 2;
+		overflow: hidden;
+		box-shadow: 0 0 $basic / 2 rgba(0,0,0,.4);
+	}
 }
 .metabox-home, .metabox-main {
 	padding: $basic/2 $basic;
