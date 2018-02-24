@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+//- defLang="ru"
+html(lang="en") 
+	include head
+	body
+		include mixins
+		#wrapper
+			include header
+			main#main
+				include pagetop
+				section#content
+					.container
+						.metabox
+							a(href="#").metabox-home #[i(aria-hidden="true").fa.fa-home] Back to Home
+							span.metabox-main Our fosterlings
+						#content-box
+							aside.page-navigation
+							.content-posts
+								.foster
+									h3.foster-name Mercie
+									.foster-container
+										.foster-left
+											.foster-img 
+											.foster-info
+												span type: cat
+												span age: 2y 8mo
+												span sex: female
+										.foster-right
+											p.foster-history Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas id sint nemo vitae nam eaque quis repudiandae, reiciendis, dignissimos temporibus harum accusamus alias ad iure. Nostrum consequatur quo minus voluptatibus voluptates incidunt excepturi, blanditiis fugit, hic maxime eaque magni vel tempora odit quaerat ea tenetur?
+									.foster-bottom
+										button(type="button").btn More about pet &raquo;
+										button(type="button").btn.btn-primary Contact us
+			include footer
+			//- #modal
+			//- 	#modal-window
+			//- 		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quis!
+		include scripts

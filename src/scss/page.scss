@@ -8,7 +8,6 @@
 	font-size: $basic * 3;
 	line-height: $basic * 4;
 	text-align: center;
-	// outline: $test;
 	@media screen and (min-width: 769px) {
 		text-align: left;
 		font-size: $basic * 4;
@@ -22,7 +21,6 @@
 	font-size: $basic * 1.25;
 	line-height: $basic * 2;
 	text-align: center;
-	// outline: 1px solid orange;
 	padding: 0;
 	margin: 0;
 	padding-bottom: $basic;
@@ -86,7 +84,6 @@
 	display: block;
 	padding: $basic / 2 $basic;
 	color: $color-bg;
-	// outline: $test;
 }
 .page-navigation-home {
 	background-color: $color-main;
@@ -95,4 +92,38 @@
 	text-indent: $basic;
 	background-color: $color-neutral;
 	border-bottom: 1px solid lighten($color-neutral, 10%);
+}
+
+
+.foster {
+	padding: $basic / 2;
+	border: 1px solid lighten($color-neutral, 20%);
+	background-color: darken($color-bg, 2%);
+	border-radius: $basic;
+}
+.foster-container {
+	display: block;
+	@media screen and (min-width: 769px) {
+		display: flex;
+		flex-direction: row;
+	}
+}
+.foster-left {
+	flex-basis: 240px;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+.foster-right {
+	flex-grow: 1;
+}
+.foster-img {
+	width: 240px;
+	height: 240px;
+	background-image: url(../img/cat-shake-hands.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.foster-bottom {
+	text-align: right;
+	border-top: 1px solid lighten($color-neutral, 20%);
 }
