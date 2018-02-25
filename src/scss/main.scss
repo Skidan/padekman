@@ -153,6 +153,15 @@
   text-align: left;
   line-height: 1.5 * $basic;
 }
+.tag {
+  line-height: $basic;
+  display: inline-block;
+  padding: $basic / 4 $basic / 2;
+  margin: 0 $basic / 4;
+  background-color: $color-neutral;
+  color: $color-bg;
+  border-radius: $basic / 2;
+}
 
 .btn {
   display: inline-block;
@@ -270,4 +279,20 @@
     box-shadow: 0 4px 4px rgba(0,0,0,.1);
     cursor: not-allowed;
   }
+}
+
+.img-article {
+  width: calc(100% - 24px);
+  margin: $basic / 4 * 3;
+}
+.thumb {
+  width: calc(100% - 24px);
+  margin: $basic / 2;
+  border-width: $basic / 2;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0 0 $basic/2 rgba(0,0,0,.3);
+}
+.thumb-320 {
+  width: 288px;
 }

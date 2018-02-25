@@ -159,3 +159,8 @@ span {
 	color: $color-neutral;
 	font-family: $font-regular;
 }
+
+img {
+  width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+}
