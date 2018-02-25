@@ -1322,6 +1322,12 @@ span {
   text-align: left;
 }
 
+.line {
+  display: block;
+  text-align: left;
+  line-height: 24px;
+}
+
 .btn {
   display: inline-block;
   vertical-align: top;
@@ -1570,7 +1576,7 @@ span {
   flex-direction: row;
 }
 
-.page-navigation {
+aside {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -1667,6 +1673,12 @@ span {
 .foster-bottom {
   text-align: right;
   border-top: 1px solid lightgray;
+  padding-top: 8px;
+}
+
+.foster-history {
+  margin: 0 16px;
+  outline: 1px dotted red;
 }
 
 .noscroll {

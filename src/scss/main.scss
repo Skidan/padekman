@@ -148,6 +148,12 @@
   text-align: left;
 }
 
+.line {
+  display: block;
+  text-align: left;
+  line-height: 1.5 * $basic;
+}
+
 .btn {
   display: inline-block;
   vertical-align: top;
