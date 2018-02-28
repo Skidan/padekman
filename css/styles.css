@@ -1688,6 +1688,8 @@ aside {
   -webkit-box-flex: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .foster-right {
@@ -1704,8 +1706,8 @@ aside {
 }
 
 .foster-img {
-  width: 240px;
   height: 240px;
+  border-radius: 8px;
   background-image: url(../img/cat-shake-hands.jpg);
   background-position: center;
   background-size: cover;
