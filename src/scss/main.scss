@@ -154,13 +154,14 @@
   line-height: 1.5 * $basic;
 }
 .tag {
-  line-height: $basic;
+  font-size: $basic * .75;
+  line-height: $basic * .75;
   display: inline-block;
   padding: $basic / 4 $basic / 2;
-  margin: 0 $basic / 4;
+  margin: 0 $basic / 8;
   background-color: $color-neutral;
   color: $color-bg;
-  border-radius: $basic / 2;
+  border-radius: $basic / 4;
 }
 
 .btn {
