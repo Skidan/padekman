@@ -27,7 +27,7 @@
 	width: $basic * 2.5;
 	height: $basic * 2.5;
 	padding: $basic * .25 0;
-	//outline: $test;
+	// outline: $test;
 }
 #menu_icon:hover {
   cursor: pointer;
@@ -37,10 +37,10 @@
 }
 .menuexpanded {
   #dash_top {
-    transform: translateY(190%) rotate(45deg);
+    transform: translateY(16.75%) translateX(-16.9%) rotate(45deg);
   }
   #dash_bottom {
-    transform: translateY(-190%) rotate(135deg);
+    transform: translateY(16.75%) translateX(16.9%) rotate(135deg);
   }
   #dash_middle {
     transform: rotate(135deg);
