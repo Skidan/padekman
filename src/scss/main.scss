@@ -298,14 +298,3 @@
 .thumb-320 {
   width: 288px;
 }
-
-.detailed {
-  display: block;
-  background-color: darken($color-bg, 5%);
-  & span {
-    display: inline-block;
-    vertical-align: top;
-    padding: $basic / 4 $basic / 2;
-    color: $color-neutral;
-  }
-}
