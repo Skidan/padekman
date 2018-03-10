@@ -1723,6 +1723,7 @@ aside {
 }
 
 .post-item {
+  display: block;
   border: 1px solid #dedede;
   border-radius: 8px;
   margin: 16px 0;
