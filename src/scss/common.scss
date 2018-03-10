@@ -50,6 +50,13 @@ h2 {
 	font-size: $basic * 2;
 	line-height: $basic * 6;
 	color: $color-main;
+	& a {
+		font-family: $font-heading;
+		font-weight: 700;
+		font-size: $basic * 2;
+		line-height: $basic * 6;
+		color: $color-main;
+	}
 }
 
 h3 {
@@ -99,13 +106,13 @@ a {
 		text-decoration: none;
 	}*/
 	&:hover {
-		color: $color-bg;
+		color: $color-dark;
 		text-decoration: none;
 	}
 	&:active {
 		outline: none;
 		text-shadow: 0 0 $basic/2 $color-main;
-		color: $color-bg;
+		color: $color-dark;
 		text-decoration: none;
 	}
 	/*&:focus {

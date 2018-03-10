@@ -249,6 +249,14 @@ h2 {
   color: #10b0ca;
 }
 
+h2 a {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 96px;
+  color: #10b0ca;
+}
+
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -302,14 +310,14 @@ a {
 }
 
 a:hover {
-  color: #ebebeb;
+  color: #3b4044;
   text-decoration: none;
 }
 
 a:active {
   outline: none;
   text-shadow: 0 0 8px #10b0ca;
-  color: #ebebeb;
+  color: #3b4044;
   text-decoration: none;
 }
 
@@ -1585,6 +1593,25 @@ img {
   }
 }
 
+.metabox a {
+  color: #0c879b;
+}
+
+.metabox-spacer {
+  display: none;
+}
+
+@media screen and (min-width: 589px) {
+  .metabox-spacer {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 32px;
+  }
+}
+
 .metabox-home, .metabox-main {
   padding: 8px 16px;
   font-size: 16px;
@@ -1592,7 +1619,7 @@ img {
 }
 
 .metabox-home {
-  color: #ebebeb;
+  color: #ebebeb !important;
   background-color: #10b0ca;
 }
 
@@ -1656,6 +1683,22 @@ aside {
   text-indent: 16px;
   background-color: #a0a0a0;
   border-bottom: 1px solid #bababa;
+}
+
+.page-navigation-box li a:hover {
+  background-color: #878787;
+}
+
+.page-navigation-box li.current_page_item a {
+  background-color: #878787;
+  position: relative;
+}
+
+.page-navigation-box li.current_page_item a::before {
+  position: absolute;
+  left: 4px;
+  font-family: FontAwesome;
+  content: "\f0da";
 }
 
 .foster {
@@ -1788,4 +1831,28 @@ aside {
 
 .hidden {
   display: none;
+}
+
+.pagination {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px dashed #d2d2d2;
+}
+
+.page-numbers {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 4px;
+  border: 1px solid #10b0ca;
+}
+
+.current {
+  color: #ebebeb;
+  background-color: #10b0ca;
+  border: 1px solid #10b0ca;
 }
