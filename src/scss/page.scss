@@ -109,7 +109,6 @@ aside {
 		background-color: darken($color-neutral, 10%);
 	}
 }
-
 .page-navigation-box li.current_page_item a {
 	background-color: darken($color-neutral, 10%);
 	position: relative;
@@ -120,6 +119,21 @@ aside {
 		font-family: FontAwesome;
 		content: "\f0da";
 	}
+}
+
+.pagination {
+  display: block;
+  text-align: center;
+  margin-top: $basic;
+  padding-top: $basic / 2;
+  border-top: 1px dashed darken($color-bg, 10%);
+}
+
+.post-item {
+	border: 1px solid darken($color-bg, 5%);
+	border-radius: $basic / 2;
+	margin: $basic 0;
+	overflow: hidden;
 }
 
 .foster {

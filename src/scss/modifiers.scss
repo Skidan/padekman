@@ -43,13 +43,6 @@
 }
 
 // WP overwritings
-.pagination {
-  display: block;
-  text-align: center;
-  margin-top: $basic;
-  padding-top: $basic / 2;
-  border-top: 1px dashed darken($color-bg, 10%);
-}
 .page-numbers {
   display: inline-block;
   vertical-align: top;
@@ -61,7 +54,6 @@
   margin: $basic / 4;
   border: 1px solid $color-main;
 }
-
 .current {
   color: $color-bg;
   background-color: $color-main;

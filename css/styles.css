@@ -245,7 +245,7 @@ h2 {
   font-family: "Cormorant Infant", serif;
   font-weight: 700;
   font-size: 32px;
-  line-height: 96px;
+  line-height: 48px;
   color: #10b0ca;
 }
 
@@ -253,7 +253,7 @@ h2 a {
   font-family: "Cormorant Infant", serif;
   font-weight: 700;
   font-size: 32px;
-  line-height: 96px;
+  line-height: 48px;
   color: #10b0ca;
 }
 
@@ -1198,6 +1198,7 @@ img {
 .section-heading {
   text-align: center;
   font-size: 48px;
+  line-height: 96px;
 }
 
 .container {
@@ -1530,6 +1531,18 @@ img {
   width: 288px;
 }
 
+.detailed {
+  display: block;
+  background-color: #dedede;
+}
+
+.detailed span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px 8px;
+  color: #a0a0a0;
+}
+
 @media screen and (min-width: 769px) {
   #pagetop {
     background-color: #dedede;
@@ -1701,6 +1714,21 @@ aside {
   content: "\f0da";
 }
 
+.pagination {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px dashed #d2d2d2;
+}
+
+.post-item {
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
 .foster {
   padding: 8px;
   border: 1px solid lightgray;
@@ -1831,14 +1859,6 @@ aside {
 
 .hidden {
   display: none;
-}
-
-.pagination {
-  display: block;
-  text-align: center;
-  margin-top: 16px;
-  padding-top: 8px;
-  border-top: 1px dashed #d2d2d2;
 }
 
 .page-numbers {
