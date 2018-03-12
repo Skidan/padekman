@@ -241,6 +241,14 @@ h1 {
   color: #10b0ca;
 }
 
+h1 span {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  color: #10b0ca;
+}
+
 h2 {
   font-family: "Cormorant Infant", serif;
   font-weight: 700;
@@ -1614,11 +1622,27 @@ img {
 .metabox-home {
   color: #ebebeb !important;
   background-color: #10b0ca;
+  position: relative;
+}
+
+.metabox-home::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 16px;
+  -webkit-filter: drop-shadow(3px 0 2px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(3px 0 2px rgba(0, 0, 0, 0.1));
+  border-left-color: #10b0ca;
+  right: -32px;
 }
 
 .metabox-main {
   color: #ebebeb;
   background-color: #a0a0a0;
+  padding-left: 32px;
 }
 
 #content-box {

@@ -42,6 +42,13 @@ h1 {
 	font-size: $basic * 3;
 	line-height: $basic * 4;
 	color: $color-main;
+	& span {
+		font-family: $font-heading;
+		font-weight: 400;
+		font-size: $basic * 3;
+		line-height: $basic * 4;
+		color: $color-main;
+	}
 }
 
 h2 {

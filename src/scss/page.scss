@@ -65,10 +65,25 @@
 .metabox-home {
 	color: $color-bg !important;
 	background-color: $color-main;
+	position: relative;
+	&::after {
+		content: " ";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-color: transparent;
+		border-style: solid;
+		border-width: $basic;
+		filter: drop-shadow(3px 0 2px rgba(0,0,0,.1));
+
+		border-left-color: $color-main;
+		right: -$basic * 2;
+	}
 }
 .metabox-main {
 	color: $color-bg;
 	background-color: $color-neutral;
+	padding-left: $basic * 2;
 }
 
 #content-box {
