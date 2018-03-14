@@ -41,6 +41,9 @@
 .hidden {
   display: none;
 }
+.hide {
+  height: 0 !important;
+}
 
 // WP overwritings
 .page-numbers {

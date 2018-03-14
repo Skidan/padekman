@@ -14,23 +14,26 @@ html(lang="en")
 							a(href="#").metabox-home #[i(aria-hidden="true").fa.fa-home] Back to Home
 							span.metabox-main Our fosterlings
 						#content-box
-							aside
-								.page-navigation
+							//- aside
+							//- 	.page-navigation
 							.content-posts
-								.foster
-										.foster-container
-											.foster-left
-												.foster-img
-											.foster-right
-												h3.foster-name Lucy
-												.foster-info
-													span.tag type: dog
-													span.tag age: 5y 3mo
-													span.tag sex: female
-												p.foster-history Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a numquam sunt ad fugiat facere aliquid assumenda placeat natus aspernatur nam ex quisquam mollitia cum, incidunt consequatur quaerat porro quod adipisci ullam enim veniam rem quae quibusdam! Voluptas natus id et. Dolor, quas iure sequi tempora et natus reiciendis optio.
-												.foster-bottom
-													button(type="button").btn.add-comment Contact us
-													button(type="button").btn.btn-primary More about pet &raquo;
+								.fosterling
+									.fosterling-teaser
+										.fosterling-img
+											img(src="../img/cat-shake-hands.jpg", alt="pug")
+											.fosterling-data
+												span #[i(aria-hidden="true").fa.fa-paw]
+												span #[i(aria-hidden="true").fa.fa-venus]
+												span 2y3mo
+										.fosterling-info
+											h3.fosterling-name Lucy
+											p.fosterling-story Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, beatae neque architecto esse nisi repellendus dolorum harum veritatis?
+											.fosterling-options
+												hr.long.regular
+												button(type="button" onclick="this.parentElement.parentElement.parentElement.nextSibling.nextSibling.classList.toggle('hide')").btn Ask a question
+												a(href="#").btn.btn-primary More about Lucy &raquo;
+									.fosterling-contact.hide
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora culpa voluptates illo laboriosam expedita pariatur velit officiis odio quae ab labore quia accusantium eaque dolorem, corrupti ducimus nam eum!
 			include footer
 			//- #modal
 			//- 	#modal-window

@@ -83,6 +83,16 @@ hr {
 	//border-top: 1px solid $color-light;
 	margin: 0 10%;
 	background: $color-main;
+	&.spacer {
+		margin: $basic 0;
+	}
+	&.long {
+		width: calc(100% - 8px);
+		margin: 0 4px;
+	}
+	&.regular {
+		background: $color-neutral;
+	}
 }
 
 p {

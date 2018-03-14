@@ -190,57 +190,158 @@ aside {
 }
 
 
-
-.foster {
-	padding: $basic / 2;
-	border: 1px solid lighten($color-neutral, 20%);
-	background-color: darken($color-bg, 2%);
-	border-radius: $basic;
-	margin-bottom: $basic;
-}
-.foster-container {
+.fosterling {
 	display: block;
-	@media screen and (min-width: 769px) {
-		display: flex;
-		flex-direction: row;
-	}
-}
-.foster-left {
-	flex-basis: 240px;
-	flex-shrink: 0;
-	flex-grow: 0;
-	position: relative;
+	margin: $basic $basic * 2;
+	background-color: darken($color-bg, 5%);
 	overflow: hidden;
-}
-.foster-right {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-}
-.foster-img {
-	height: 240px;
-	border-radius: $basic / 2;
-	background-image: url(../img/cat-shake-hands.jpg);
-	background-position: center;
-	background-size: cover;
-}
-.foster-name {
-	margin-left: $basic / 2;
-	font-size: $basic * 2.5;
-	line-height: $basic * 3.5;
-}
-.foster-info {
-	margin-left: $basic / 2;
-}
-.foster-bottom {
-	text-align: right;
-	border-top: 1px solid lighten($color-neutral, 20%);
-	padding-top: $basic / 2;
-	margin-left: $basic / 2;
-}
-.foster-history, .foster-history-full {
-	font-family: $font-regular;
-	margin: $basic $basic / 2 0 $basic / 2;
-	//outline: 1px dotted red;
-	flex-grow: 1;
+	@media screen and (min-width: 589px) {
+		border-left: $basic / 4 solid darken($color-bg, 10%);
+		transition: background-color .3s, border-left .3s, box-shadow .3s;
+		margin: $basic 0;
+		border-top-right-radius: $basic / 2;
+		border-bottom-right-radius: $basic / 2;
+		box-shadow: 0 $basic / 2 $basic / 2 rgba(0,0,0,.1);
+		&:hover {
+			border-left: $basic / 4 solid $color-main;
+			background-color: rgba(18,126,155,.2);
+			box-shadow: 0 $basic / 2 $basic / 2 rgba(18,126,155,.4);
+		}
+	}
+	@media screen and (min-width: 1600px) {
+		border-left: $basic / 2 solid darken($color-bg, 10%);
+		border-top-right-radius: $basic;
+		border-bottom-right-radius: $basic;
+		&:hover {
+			border-left: $basic / 2 solid $color-main;
+		}
+	}
+
+	& .fosterling-teaser {
+		display: block;		
+		@media screen and (min-width: 589px) {
+			display:flex;
+			flex-direction: row;
+		}
+		@media screen and (min-width: 769px) {
+			height: 256px;
+		}
+		@media screen and (min-width: 1600px) {
+			height: 420px;
+		}
+
+		& .fosterling-img {
+			min-width: 220px;
+			flex-grow: 0;
+			flex-shrink: 0;
+			@media screen and (min-width: 589px) {
+				position: relative;
+				width: 220px;
+				height: 220px;
+				& img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			@media screen and (min-width: 769px) {
+				width: 256px;
+				height: 256px;
+			}
+			@media screen and (min-width: 1600px) {
+				width: 420px;
+				height: 420px;
+			}
+			& .fosterling-data {
+				display: block;
+				text-align: center;
+				background-color: $color-neutral;
+				& span {
+					font-size: $basic * 1.5;
+					line-height: $basic * 2;
+					color: $color-bg;
+					padding: $basic / 2;
+				}
+				@media screen and (min-width: 589px) {
+					position: absolute;
+					height: $basic * 3;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background: rgba(0,0,0,.5);
+					display: flex;
+					& span {
+						display: block;
+						flex-grow: 1;
+						font-size: $basic * 2;
+						line-height: $basic * 3;
+						font-family: FontAwesome;
+						color: $color-bg;
+						text-align: center;
+						opacity: .5;
+						padding: 0;
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+		& .fosterling-info {
+			
+			display: block;
+			overflow: hidden;
+			@media screen and (min-width: 589px) {
+				flex-grow: 1;
+				height: 220px;
+			}
+			@media screen and (min-width: 769px) {
+				height: 256px;
+			}
+			@media screen and (min-width: 1600px) {
+				height: 420px;
+			}
+			& .fosterling-name {
+				margin: 0 $basic;
+				font-family: $font-heading;
+				font-size: $basic * 2.5;
+				line-height: $basic * 3;
+				@media screen and (min-width: 1600px) {
+					font-size: $basic * 3;
+					font-weight: 700;
+					line-height: $basic * 4;
+					margin: 0 $basic * 2;
+				}
+			}
+			& .fosterling-options {
+				text-align: center;
+				@media screen and (min-width: 589px) {
+					text-align: right;
+					height: $basic * 3;
+				}
+			}
+			& .fosterling-story {
+				margin: 0 $basic;
+				color: $color-neutral;
+				@media screen and (min-width: 589px) {
+					height: calc(220px - 16px - 48px - 32px);
+				}
+				@media screen and (min-width: 769px) {
+					height: calc(256px - 16px - 48px - 32px);
+					font-size: $basic * 1.25;
+					line-height: 1.5;
+				}
+				@media screen and (min-width: 1600px) {
+					height: calc(420px - 16px - 64px - 32px);
+					font-size: $basic * 1.5;
+					margin: 0 $basic * 2;
+				}
+			}
+		}
+	}
+
+	& .fosterling-contact {
+		height: 200px;
+		transition: height .3s;
+	}
 }
