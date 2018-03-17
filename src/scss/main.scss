@@ -166,8 +166,9 @@
 }
 
 .btn {
-  display: block;
-	margin: $basic auto;
+  display: inline-block;
+  vertical-align: top;
+	margin: $basic / 2 $basic / 2 $basic / 2 0;
 	//margin-bottom: $basic / 2;
   background-color: rgba(233,234,236,.3);
   color: $color-main;
@@ -177,7 +178,7 @@
   line-height: $basic * 2;
   box-shadow: 0 4px 4px rgba(0,0,0,.1);
   transition: background-color .2s;
-  width: calc(100% - 32px);
+  //width: calc(100% - 32px);
   &:hover {
     background-color: lighten($color-neutral, 10%);
     box-shadow: 0 4px 6px rgba(0,0,0,.2);
@@ -189,21 +190,18 @@
     color: $color-bg;
   }
   @media screen and (min-width: 589px) {
-    
-    display: inline-block;
-    vertical-align: top;
     padding: 0 $basic;
     margin: $basic / 2 $basic / 4;
-    width: auto;
+    //width: auto;
   }
 }
 .btn-primary {
-  background-color: rgba(31,57,72,.3);
+  background-color: rgba(16,176,202,.3);
   color: rgb(31,57,72);
   box-shadow: 0 4px 4px rgba(31,57,72,.2);
-  border-color: $color-dark;
+  border-color: darken($color-main, 10%);
   &:hover {
-    background-color: rgb(31,57,72);
+    background-color: darken($color-main, 10%);
     color: $color-bg;
     box-shadow: 0 4px 6px rgba(18,126,155,.4);
   }

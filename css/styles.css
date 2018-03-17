@@ -398,6 +398,10 @@ img {
   image-rendering: -webkit-optimize-contrast;
 }
 
+textarea {
+  font-size: 16px;
+}
+
 #wrapper {
   width: 100%;
   min-height: 100vh;
@@ -1376,8 +1380,9 @@ img {
 }
 
 .btn {
-  display: block;
-  margin: 16px auto;
+  display: inline-block;
+  vertical-align: top;
+  margin: 8px 8px 8px 0;
   background-color: rgba(233, 234, 236, 0.3);
   color: #10b0ca;
   padding: 0 8px;
@@ -1389,7 +1394,6 @@ img {
   -webkit-transition: background-color .2s;
   -o-transition: background-color .2s;
   transition: background-color .2s;
-  width: calc(100% - 32px);
 }
 
 .btn:hover {
@@ -1408,24 +1412,21 @@ img {
 
 @media screen and (min-width: 589px) {
   .btn {
-    display: inline-block;
-    vertical-align: top;
     padding: 0 16px;
     margin: 8px 4px;
-    width: auto;
   }
 }
 
 .btn-primary {
-  background-color: rgba(31, 57, 72, 0.3);
+  background-color: rgba(16, 176, 202, 0.3);
   color: #1f3948;
   -webkit-box-shadow: 0 4px 4px rgba(31, 57, 72, 0.2);
   box-shadow: 0 4px 4px rgba(31, 57, 72, 0.2);
-  border-color: #3b4044;
+  border-color: #0c879b;
 }
 
 .btn-primary:hover {
-  background-color: #1f3948;
+  background-color: #0c879b;
   color: #ebebeb;
   -webkit-box-shadow: 0 4px 6px rgba(18, 126, 155, 0.4);
   box-shadow: 0 4px 6px rgba(18, 126, 155, 0.4);
@@ -2029,7 +2030,6 @@ aside {
 }
 
 .fosterling .fosterling-contact {
-  height: 300px;
   -webkit-transition: height .3s;
   -o-transition: height .3s;
   transition: height .3s;
@@ -2042,6 +2042,22 @@ aside {
 
 h4.fosterling-contacts-heading {
   line-height: 48px;
+  font-weight: 700;
+}
+
+h5.fosterling-contacts-heading {
+  text-align: left;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 24px 8px 0 8px;
+  border-bottom: 1px dashed #b8b8b8;
+}
+
+@media screen and (min-width: 589px) {
+  h5.fosterling-contacts-heading {
+    text-align: center;
+    margin: 32px 16px 0 16px;
+  }
 }
 
 .contact-option {
@@ -2059,6 +2075,71 @@ h4.fosterling-contacts-heading {
     -ms-flex-direction: row;
     flex-direction: row;
   }
+}
+
+.contact-option .contact-option-left {
+  text-align: left;
+  padding: 0 8px;
+}
+
+@media screen and (min-width: 589px) {
+  .contact-option .contact-option-left {
+    padding: 8px;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    text-align: right;
+  }
+  .contact-option .contact-option-left span {
+    display: inline-block;
+    margin: 8px 0;
+    color: #3b4044;
+  }
+}
+
+.contact-option .contact-option-right {
+  text-align: left;
+  padding: 0 8px;
+}
+
+@media screen and (min-width: 589px) {
+  .contact-option .contact-option-right {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 8px;
+  }
+  .contact-option .contact-option-right span {
+    display: inline-block;
+    margin: 8px 0;
+  }
+}
+
+.fosterling-contact input[type="email"] {
+  display: block;
+  margin: 8px 0;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.fosterling-contact input[type="text"] {
+  display: block;
+  margin: 8px 0;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.fosterling-contact textarea {
+  display: block;
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 4px;
+  width: calc(100% - 32px);
+  border-radius: 4px;
 }
 
 .noscroll {

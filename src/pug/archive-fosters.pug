@@ -30,26 +30,33 @@ html(lang="en")
 											p.fosterling-story Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, beatae neque architecto esse nisi repellendus dolorum harum veritatis?
 											.fosterling-options
 												hr
-												button(type="button" onclick="this.parentElement.parentElement.parentElement.nextSibling.nextSibling.classList.toggle('hide')").btn Ask a question
+												button(type="button" onclick="this.parentElement.parentElement.parentElement.nextSibling.nextSibling.classList.toggle('hidden')").btn Ask a question
 												a(href="#").btn.btn-primary More about Lucy &raquo;
-									.fosterling-contact
+									.fosterling-contact.hidden
 										h4.fosterling-contacts-heading Contact us:
 										hr
-										h5.fosterling-contacts-heading by phone
-										.contact-option
-												span tel. (RU, LT): +370 67 615 359
-										h5.fosterling-contacts-heading by e-mail:
+										h5.fosterling-contacts-heading By phone:
 										.contact-option
 											.contact-option-left
-												span leave your e-mail address and your question
+												span tel. (RU/LT):
 											.contact-option-right
-												input(type="email")
-												input(type="text")
-										h5.fosterling-contacts-heading leave a comment:
+												span +370 67 615 359
+										h5.fosterling-contacts-heading By e-mail:
 										.contact-option
 											.contact-option-left
-												span you can ask Your question in a comment right here (it will be shown after moderation)
+												span leave your e-mail address and your question (RU/EN/LT)
 											.contact-option-right
+												input(type="email" size="30" placeholder="the.user@email.com" required)
+												textarea(rows="4" placeholder="your message (400 words max)...")
+												button(type="button" required).btn Send email &raquo;
+										h5.fosterling-contacts-heading Leave a comment:
+										.contact-option
+											.contact-option-left
+												span leave your comment (it will be shown after moderation) (RU/EN/LT)
+											.contact-option-right
+												input(type="text" size="30" placeholder="Nickname" required)
+												textarea(rows="4" placeholder="your message (400 words max)...")
+												button(type="button" required).btn Leave comment
 			include footer
 			//- #modal
 			//- 	#modal-window

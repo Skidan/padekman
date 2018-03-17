@@ -81,27 +81,35 @@
                       <p class="fosterling-story">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, beatae neque architecto esse nisi repellendus dolorum harum veritatis?</p>
                       <div class="fosterling-options">
                         <hr/>
-                        <button class="btn" type="button" onclick="this.parentElement.parentElement.parentElement.nextSibling.nextSibling.classList.toggle('hide')">Ask a question</button><a class="btn btn-primary" href="#">More about Lucy &raquo;</a>
+                        <button class="btn" type="button" onclick="this.parentElement.parentElement.parentElement.nextSibling.nextSibling.classList.toggle('hidden')">Ask a question</button><a class="btn btn-primary" href="#">More about Lucy &raquo;</a>
                       </div>
                     </div>
                   </div>
-                  <div class="fosterling-contact">
+                  <div class="fosterling-contact hidden">
                     <h4 class="fosterling-contacts-heading">Contact us:</h4>
                     <hr/>
-                    <h5 class="fosterling-contacts-heading">by phone</h5>
-                    <div class="contact-option"><span>tel. (RU, LT): +370 67 615 359</span></div>
-                    <h5 class="fosterling-contacts-heading">by e-mail:</h5>
+                    <h5 class="fosterling-contacts-heading">By phone:</h5>
                     <div class="contact-option">
-                      <div class="contact-option-left"><span>leave your e-mail address and your question</span></div>
+                      <div class="contact-option-left"><span>tel. (RU/LT):</span></div>
+                      <div class="contact-option-right"><span>+370 67 615 359</span></div>
+                    </div>
+                    <h5 class="fosterling-contacts-heading">By e-mail:</h5>
+                    <div class="contact-option">
+                      <div class="contact-option-left"><span>leave your e-mail address and your question (RU/EN/LT)</span></div>
                       <div class="contact-option-right">
-                        <input type="email"/>
-                        <input type="text"/>
+                        <input type="email" size="30" placeholder="the.user@email.com" required="required"/>
+                        <textarea rows="4" placeholder="your message (400 words max)..."></textarea>
+                        <button class="btn" type="button" required="required">Send email &raquo;</button>
                       </div>
                     </div>
-                    <h5 class="fosterling-contacts-heading">leave a comment:</h5>
+                    <h5 class="fosterling-contacts-heading">Leave a comment:</h5>
                     <div class="contact-option">
-                      <div class="contact-option-left"><span>you can ask Your question in a comment right here (it will be shown after moderation)</span></div>
-                      <div class="contact-option-right"></div>
+                      <div class="contact-option-left"><span>leave your comment (it will be shown after moderation) (RU/EN/LT)</span></div>
+                      <div class="contact-option-right">
+                        <input type="text" size="30" placeholder="Nickname" required="required"/>
+                        <textarea rows="4" placeholder="your message (400 words max)..."></textarea>
+                        <button class="btn" type="button" required="required">Leave comment</button>
+                      </div>
                     </div>
                   </div>
                 </div>

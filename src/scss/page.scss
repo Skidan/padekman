@@ -340,7 +340,7 @@ aside {
 	}
 
 	& .fosterling-contact {
-		height: 300px;
+		//height: 300px;
 		transition: height .3s;
 	}
 }
@@ -351,6 +351,19 @@ aside {
 }
 h4.fosterling-contacts-heading {
 	line-height: $basic * 3;
+	
+	font-weight: 700;
+}
+h5.fosterling-contacts-heading {
+	text-align: left;
+	line-height: $basic * 1.5;
+	font-weight: 700;
+	margin: $basic * 1.5 $basic / 2 0 $basic / 2;
+	border-bottom: 1px dashed darken($color-bg, 20%);
+	@media screen and (min-width: 589px) {
+		text-align: center;
+		margin: $basic * 2 $basic 0 $basic;
+	}
 }
 .contact-option {
 	display: block;
@@ -359,4 +372,62 @@ h4.fosterling-contacts-heading {
 		display: flex;
 		flex-direction: row;
 	}
+	& .contact-option-left {
+		text-align: left;
+		padding: 0 $basic / 2;
+		// outline: $test;
+		@media screen and (min-width: 589px) {
+			padding: $basic / 2;
+			flex-basis: 200px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			text-align: right;
+			& span {
+				display: inline-block;
+				margin: $basic / 2 0;
+				color: $color-dark;
+			}
+		}
+	}
+	& .contact-option-right {
+		text-align: left;
+		padding: 0 $basic / 2;
+		// outline: $test;
+		@media screen and (min-width: 589px) {
+			flex-grow: 1;
+			padding: $basic / 2;
+			& span {
+				display: inline-block;
+				margin: $basic / 2 0;
+			}
+		}
+	}
+	
 }
+.fosterling-contact {
+	& input {
+	}
+	& input[type="email"] {
+		display: block;
+		margin: $basic / 2 0;
+		padding: $basic / 4;
+		border-radius: $basic / 4;
+	}
+	& input[type="text"] {
+		display: block;
+		margin: $basic / 2 0;
+		padding: $basic / 4;
+		border-radius: $basic / 4;
+	}
+	& textarea {
+		display: block;
+		font-size: $basic;
+		margin: $basic / 2 0;
+		padding: $basic / 4;
+		width: calc(100% - 32px);
+		border-radius: $basic / 4;
+		// resize: none;
+	}
+}
+
+
