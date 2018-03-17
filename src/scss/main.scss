@@ -166,18 +166,18 @@
 }
 
 .btn {
-  display: inline-block;
-  vertical-align: top;
-	margin: $basic / 4;
-	margin-bottom: $basic / 2;
+  display: block;
+	margin: $basic auto;
+	//margin-bottom: $basic / 2;
   background-color: rgba(233,234,236,.3);
   color: $color-main;
-  padding: 0 $basic;
+  padding: 0 $basic/2;
   border-radius: $basic / 4;
   border: 1px solid $color-neutral;
   line-height: $basic * 2;
   box-shadow: 0 4px 4px rgba(0,0,0,.1);
   transition: background-color .2s;
+  width: calc(100% - 32px);
   &:hover {
     background-color: lighten($color-neutral, 10%);
     box-shadow: 0 4px 6px rgba(0,0,0,.2);
@@ -187,6 +187,14 @@
     box-shadow: 0 2px 6px rgba(0,0,0,.2);
     background-color: darken($color-neutral, 10%);
     color: $color-bg;
+  }
+  @media screen and (min-width: 589px) {
+    
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 $basic;
+    margin: $basic / 2 $basic / 4;
+    width: auto;
   }
 }
 .btn-primary {

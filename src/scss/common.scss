@@ -73,7 +73,12 @@ h4 {
 	line-height: $basic * 1.75;
 	color: $color-bg;
 }
-//h5 {}
+h5 {
+	color: $color-main;
+	font-size: $basic;
+	font-weight: 400;
+	font-family: $font-regular;
+}
 //h6 {}
 
 hr {
@@ -81,14 +86,14 @@ hr {
 	height: 2px;
 	//border-bottom: 1px solid $color-neutral;
 	//border-top: 1px solid $color-light;
-	margin: 0 10%;
+	margin: $basic / 2 10%;
 	background: $color-main;
 	&.spacer {
 		margin: $basic 0;
 	}
 	&.long {
 		width: calc(100% - 8px);
-		margin: 0 4px;
+		margin: $basic / 2 4px;
 	}
 	&.regular {
 		background: $color-neutral;
@@ -108,6 +113,9 @@ a {
 	text-shadow: none;
 	transition: color .2s, text-shadow .2s;
 	color: $color-main;
+	
+	padding: 0;
+	margin: 0;
 	/*&:link {
 		color: $color-main;
 	}

@@ -273,10 +273,17 @@ h4 {
   color: #ebebeb;
 }
 
+h5 {
+  color: #10b0ca;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
 hr {
   width: 80%;
   height: 2px;
-  margin: 0 10%;
+  margin: 8px 10%;
   background: #10b0ca;
 }
 
@@ -286,7 +293,7 @@ hr.spacer {
 
 hr.long {
   width: calc(100% - 8px);
-  margin: 0 4px;
+  margin: 8px 4px;
 }
 
 hr.regular {
@@ -308,6 +315,8 @@ a {
   -o-transition: color .2s, text-shadow .2s;
   transition: color .2s, text-shadow .2s;
   color: #10b0ca;
+  padding: 0;
+  margin: 0;
   /*&:link {
 		color: $color-main;
 	}
@@ -1367,13 +1376,11 @@ img {
 }
 
 .btn {
-  display: inline-block;
-  vertical-align: top;
-  margin: 4px;
-  margin-bottom: 8px;
+  display: block;
+  margin: 16px auto;
   background-color: rgba(233, 234, 236, 0.3);
   color: #10b0ca;
-  padding: 0 16px;
+  padding: 0 8px;
   border-radius: 4px;
   border: 1px solid #a0a0a0;
   line-height: 32px;
@@ -1382,6 +1389,7 @@ img {
   -webkit-transition: background-color .2s;
   -o-transition: background-color .2s;
   transition: background-color .2s;
+  width: calc(100% - 32px);
 }
 
 .btn:hover {
@@ -1396,6 +1404,16 @@ img {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   background-color: #878787;
   color: #ebebeb;
+}
+
+@media screen and (min-width: 589px) {
+  .btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 16px;
+    margin: 8px 4px;
+    width: auto;
+  }
 }
 
 .btn-primary {
@@ -1851,18 +1869,6 @@ aside {
   }
 }
 
-@media screen and (min-width: 769px) {
-  .fosterling .fosterling-teaser {
-    height: 256px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .fosterling .fosterling-teaser {
-    height: 420px;
-  }
-}
-
 .fosterling .fosterling-teaser .fosterling-img {
   min-width: 220px;
   -webkit-box-flex: 0;
@@ -1895,8 +1901,8 @@ aside {
 
 @media screen and (min-width: 1600px) {
   .fosterling .fosterling-teaser .fosterling-img {
-    width: 420px;
-    height: 420px;
+    width: 320px;
+    height: 320px;
   }
 }
 
@@ -1965,7 +1971,7 @@ aside {
 
 @media screen and (min-width: 1600px) {
   .fosterling .fosterling-teaser .fosterling-info {
-    height: 420px;
+    height: 320px;
   }
 }
 
@@ -1992,7 +1998,8 @@ aside {
 @media screen and (min-width: 589px) {
   .fosterling .fosterling-teaser .fosterling-info .fosterling-options {
     text-align: right;
-    height: 48px;
+    height: 68px;
+    margin-right: 12px;
   }
 }
 
@@ -2003,13 +2010,13 @@ aside {
 
 @media screen and (min-width: 589px) {
   .fosterling .fosterling-teaser .fosterling-info .fosterling-story {
-    height: calc(220px - 16px - 48px - 32px);
+    height: calc(220px - 68px - 8px - 48px);
   }
 }
 
 @media screen and (min-width: 769px) {
   .fosterling .fosterling-teaser .fosterling-info .fosterling-story {
-    height: calc(256px - 16px - 48px - 32px);
+    height: calc(256px - 68px - 8px - 48px);
     font-size: 20px;
     line-height: 1.5;
   }
@@ -2017,17 +2024,41 @@ aside {
 
 @media screen and (min-width: 1600px) {
   .fosterling .fosterling-teaser .fosterling-info .fosterling-story {
-    height: calc(420px - 16px - 64px - 32px);
-    font-size: 24px;
-    margin: 0 32px;
+    height: calc(320px - 68px - 8px - 64px);
   }
 }
 
 .fosterling .fosterling-contact {
-  height: 200px;
+  height: 300px;
   -webkit-transition: height .3s;
   -o-transition: height .3s;
   transition: height .3s;
+}
+
+.fosterling-contacts-heading {
+  color: #10b0ca;
+  text-align: center;
+}
+
+h4.fosterling-contacts-heading {
+  line-height: 48px;
+}
+
+.contact-option {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 589px) {
+  .contact-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .noscroll {

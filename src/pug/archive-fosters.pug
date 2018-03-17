@@ -29,11 +29,27 @@ html(lang="en")
 											h3.fosterling-name Lucy
 											p.fosterling-story Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, beatae neque architecto esse nisi repellendus dolorum harum veritatis?
 											.fosterling-options
-												hr.long.regular
+												hr
 												button(type="button" onclick="this.parentElement.parentElement.parentElement.nextSibling.nextSibling.classList.toggle('hide')").btn Ask a question
 												a(href="#").btn.btn-primary More about Lucy &raquo;
-									.fosterling-contact.hide
-										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora culpa voluptates illo laboriosam expedita pariatur velit officiis odio quae ab labore quia accusantium eaque dolorem, corrupti ducimus nam eum!
+									.fosterling-contact
+										h4.fosterling-contacts-heading Contact us:
+										hr
+										h5.fosterling-contacts-heading by phone
+										.contact-option
+												span tel. (RU, LT): +370 67 615 359
+										h5.fosterling-contacts-heading by e-mail:
+										.contact-option
+											.contact-option-left
+												span leave your e-mail address and your question
+											.contact-option-right
+												input(type="email")
+												input(type="text")
+										h5.fosterling-contacts-heading leave a comment:
+										.contact-option
+											.contact-option-left
+												span you can ask Your question in a comment right here (it will be shown after moderation)
+											.contact-option-right
 			include footer
 			//- #modal
 			//- 	#modal-window

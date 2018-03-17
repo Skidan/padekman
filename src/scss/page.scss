@@ -223,12 +223,12 @@ aside {
 			display:flex;
 			flex-direction: row;
 		}
-		@media screen and (min-width: 769px) {
-			height: 256px;
-		}
-		@media screen and (min-width: 1600px) {
-			height: 420px;
-		}
+		// @media screen and (min-width: 769px) {
+		// 	height: 256px;
+		// }
+		// @media screen and (min-width: 1600px) {
+		// 	height: 420px;
+		// }
 
 		& .fosterling-img {
 			min-width: 220px;
@@ -249,8 +249,8 @@ aside {
 				height: 256px;
 			}
 			@media screen and (min-width: 1600px) {
-				width: 420px;
-				height: 420px;
+				width: 320px;
+				height: 320px;
 			}
 			& .fosterling-data {
 				display: block;
@@ -299,7 +299,7 @@ aside {
 				height: 256px;
 			}
 			@media screen and (min-width: 1600px) {
-				height: 420px;
+				height: 320px;
 			}
 			& .fosterling-name {
 				margin: 0 $basic;
@@ -317,31 +317,46 @@ aside {
 				text-align: center;
 				@media screen and (min-width: 589px) {
 					text-align: right;
-					height: $basic * 3;
+					height: 68px;
+					margin-right: $basic / 4 * 3;
 				}
 			}
 			& .fosterling-story {
 				margin: 0 $basic;
 				color: $color-neutral;
 				@media screen and (min-width: 589px) {
-					height: calc(220px - 16px - 48px - 32px);
+					height: calc(220px - 68px - 8px - 48px);
 				}
 				@media screen and (min-width: 769px) {
-					height: calc(256px - 16px - 48px - 32px);
+					height: calc(256px - 68px - 8px - 48px);
 					font-size: $basic * 1.25;
 					line-height: 1.5;
 				}
 				@media screen and (min-width: 1600px) {
-					height: calc(420px - 16px - 64px - 32px);
-					font-size: $basic * 1.5;
-					margin: 0 $basic * 2;
+					height: calc(320px - 68px - 8px - 64px);
 				}
 			}
 		}
 	}
 
 	& .fosterling-contact {
-		height: 200px;
+		height: 300px;
 		transition: height .3s;
+	}
+}
+.fosterling-contacts-heading {
+	color: $color-main;
+	text-align: center;
+	
+}
+h4.fosterling-contacts-heading {
+	line-height: $basic * 3;
+}
+.contact-option {
+	display: block;
+	text-align: center;
+	@media screen and (min-width: 589px) {
+		display: flex;
+		flex-direction: row;
 	}
 }
