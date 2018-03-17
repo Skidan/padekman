@@ -405,8 +405,6 @@ h5.fosterling-contacts-heading {
 	
 }
 .fosterling-contact {
-	& input {
-	}
 	& input[type="email"] {
 		display: block;
 		margin: $basic / 2 0;
@@ -424,9 +422,9 @@ h5.fosterling-contacts-heading {
 		font-size: $basic;
 		margin: $basic / 2 0;
 		padding: $basic / 4;
-		width: calc(100% - 32px);
+		width: calc(100% - 8px);
 		border-radius: $basic / 4;
-		// resize: none;
+		resize: none;
 	}
 }
 

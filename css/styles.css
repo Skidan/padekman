@@ -2138,8 +2138,9 @@ h5.fosterling-contacts-heading {
   font-size: 16px;
   margin: 8px 0;
   padding: 4px;
-  width: calc(100% - 32px);
+  width: calc(100% - 8px);
   border-radius: 4px;
+  resize: none;
 }
 
 .noscroll {
