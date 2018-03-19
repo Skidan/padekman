@@ -12,22 +12,12 @@ body {
 	width: 100%;
 	height: 100%;
 	min-width: 300px;
-	background-color: $color-bg;	
-	// @media screen and (min-width: 680px) {
-	// 	background-image: url(../img/bodybg.jpg);
-	// 	background-size: cover;
-	// 	background-repeat: no-repeat;
-	// 	background-attachment: fixed;
-	// 	background-position-x: center;
-	// 	background-position-y: center;
-	// }
+	background-color: $color-bg;
 }
 
 section {
 	display: block;
 	width: 100%;
-	//padding: $basic / 2;
-	//background-color: $color-light;
 }
 
 article {
@@ -84,8 +74,6 @@ h5 {
 hr {
 	width: 80%;
 	height: 2px;
-	//border-bottom: 1px solid $color-neutral;
-	//border-top: 1px solid $color-light;
 	margin: $basic / 2 10%;
 	background: $color-main;
 	&.spacer {
@@ -116,13 +104,6 @@ a {
 	
 	padding: 0;
 	margin: 0;
-	/*&:link {
-		color: $color-main;
-	}
-	&:visited {
-		color: darken($color-main, 10%);
-		text-decoration: none;
-	}*/
 	&:hover {
 		color: $color-dark;
 		text-decoration: none;
@@ -133,11 +114,6 @@ a {
 		color: $color-dark;
 		text-decoration: none;
 	}
-	/*&:focus {
-		outline: none;
-		text-shadow: 0 0 $basic/2 $color-main;
-		color: $color-bg;
-	}*/
 }
 
 button {
