@@ -189,7 +189,7 @@ aside {
 	}
 }
 
-
+// Old fosterling styles
 .fosterling {
 	display: block;
 	margin: $basic $basic * 2;
@@ -216,7 +216,6 @@ aside {
 			border-left: $basic / 2 solid $color-main;
 		}
 	}
-
 	& .fosterling-teaser {
 		display: block;		
 		@media screen and (min-width: 589px) {
@@ -229,7 +228,6 @@ aside {
 		// @media screen and (min-width: 1600px) {
 		// 	height: 420px;
 		// }
-
 		& .fosterling-img {
 			min-width: 220px;
 			flex-grow: 0;
@@ -338,7 +336,6 @@ aside {
 			}
 		}
 	}
-
 	& .fosterling-contact {
 		//height: 300px;
 		transition: height .3s;
@@ -347,11 +344,9 @@ aside {
 .fosterling-contacts-heading {
 	color: $color-main;
 	text-align: center;
-	
 }
 h4.fosterling-contacts-heading {
 	line-height: $basic * 3;
-	
 	font-weight: 700;
 }
 h5.fosterling-contacts-heading {
@@ -428,4 +423,37 @@ h5.fosterling-contacts-heading {
 	}
 }
 
+// New foster styles
 
+.fosterling-new {
+	display: block;
+	width: 100%;
+	@media screen and (min-width: 589px) {
+		display: flex;
+		flex-direction: row;
+		height: 192px;
+		overflow: hidden;
+	}
+}
+.fosterling-img-container {
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	@media screen and (min-width: 589px) {
+		flex-basis: 192px;
+		flex-shrink: 0;
+		flex-grow: 0;
+	}
+}
+.fosterling-data {
+	width: 100%;
+	@media screen and (min-width: 589px) {
+		flex-grow: 1;
+	}
+}
+.fosterling-text-more {
+	width: 100%;
+	@media screen and (min-width: 589px) {
+		width: calc((100% - 192px) / 4 * 3);
+	}
+}
