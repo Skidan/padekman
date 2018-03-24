@@ -1938,6 +1938,7 @@ aside {
 
 @media screen and (min-width: 589px) {
   .fosterling .fosterling-teaser .fosterling-info {
+    position: relative;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -2028,6 +2029,77 @@ aside {
   -webkit-transition: height .3s;
   -o-transition: height .3s;
   transition: height .3s;
+}
+
+.fosterling-status {
+  display: block;
+  background-color: #da4453;
+  color: #ebebeb;
+  line-height: 24px;
+  text-align: center;
+  padding: 8px 0;
+  margin: 8px 0;
+}
+
+.fosterling-status.newbie-post {
+  background-color: #ffff00;
+  color: black;
+}
+
+.fosterling-status.adopted-post {
+  background-color: #006321;
+}
+
+.fosterling-status.urgent-post {
+  background-color: #da4453;
+}
+
+@media screen and (min-width: 589px) {
+  .fosterling-status {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px 16px;
+  }
+  .fosterling-status.newbie-post::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ffff00;
+    border-right: 16px solid #ffff00;
+    border-bottom: 20px solid transparent;
+    border-left: 16px solid transparent;
+  }
+  .fosterling-status.adopted-post::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #006321;
+    border-right: 16px solid #006321;
+    border-bottom: 20px solid transparent;
+    border-left: 16px solid transparent;
+  }
+  .fosterling-status.urgent-post::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #da4453;
+    border-right: 16px solid #da4453;
+    border-bottom: 20px solid transparent;
+    border-left: 16px solid transparent;
+  }
 }
 
 .fosterling-contacts-heading {

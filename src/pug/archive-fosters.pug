@@ -17,6 +17,7 @@ html(lang="en")
 							//- aside
 							//- 	.page-navigation
 							.content-posts
+								//- start of teaser
 								.fosterling
 									.fosterling-teaser
 										a(href="#" target="_self").fosterling-img
@@ -27,6 +28,9 @@ html(lang="en")
 												span 2y3mo
 										.fosterling-info
 											h3.fosterling-name Lucy
+											span.fosterling-status.newbie-post.hidden Newbie
+											span.fosterling-status.adopted-post.hidden Adopted
+											span.fosterling-status.urgent-post Urgent help
 											p.fosterling-story Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium expedita enim blanditiis voluptates at iste nemo quam assumenda! Quibusdam dolore delectus eum modi amet in voluptatibus, incidunt odio perferendis a repudiandae libero inventore velit blanditiis recusandae aperiam iure deserunt nam laboriosam corporis quisquam maiores molestias maxime! Recusandae repudiandae consequatur, sit officiis nobis saepe unde expedita fugiat sed laborum, corporis accusantium quo eum doloremque beatae consequuntur sint! Obcaecati voluptates veritatis praesentium excepturi error velit aspernatur, facilis earum quibusdam a, saepe vero provident doloremque rem, voluptatum explicabo nemo. Quidem dolor omnis facilis. Quae facere ea est amet maxime quis atque architecto.
 											.fosterling-options
 												hr
@@ -52,11 +56,14 @@ html(lang="en")
 										h5.fosterling-contacts-heading Leave a comment:
 										.contact-option
 											.contact-option-left
-												span leave your comment (it will be shown after moderation) (RU/EN/LT)
+												span leave your comment #[br](it will be shown after moderation)#[br](RU/EN/LT)
 											.contact-option-right
 												input(type="text" size="30" placeholder="Nickname" required)
 												textarea(rows="4" placeholder="your message (400 words max)...")
 												button(type="button" required).btn Leave comment
+								//- end of teaser
+								//- start of full post - fosterling
+								.fosterling
 			include footer
 			//- #modal
 			//- 	#modal-window

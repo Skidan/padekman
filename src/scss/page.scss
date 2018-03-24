@@ -289,10 +289,10 @@ aside {
 			}
 		}
 		& .fosterling-info {
-			
 			display: block;
 			overflow: hidden;
 			@media screen and (min-width: 589px) {
+				position: relative;
 				flex-grow: 1;
 				height: 220px;
 			}
@@ -355,6 +355,73 @@ aside {
 		transition: height .3s;
 	}
 }
+
+.fosterling-status {
+	//position: absolute;
+	display: block;
+	background-color: $color-contrast;
+	color: $color-bg;
+	line-height: $basic * 1.5;
+	text-align: center;
+	padding: $basic * .5 0;
+	margin: $basic / 2 0;
+	&.newbie-post {
+		background-color: #ffff00;
+		color: black;
+	}
+	&.adopted-post {
+		background-color: #006321;
+	}
+	&.urgent-post {
+		background-color: $color-contrast;
+	}
+	@media screen and (min-width: 589px) {
+		display: inline-block;
+		vertical-align: top;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+		padding: $basic / 2 $basic;
+		&.newbie-post::before {
+			content: '';
+			position: absolute;
+			left: -$basic * 2;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-top: $basic * 1.25 solid #ffff00;
+			border-right: $basic solid #ffff00;
+			border-bottom: $basic * 1.25 solid transparent;
+			border-left: $basic solid transparent;
+		}
+		&.adopted-post::before {
+			content: '';
+			position: absolute;
+			left: -$basic * 2;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-top: $basic * 1.25 solid #006321;
+			border-right: $basic solid #006321;
+			border-bottom: $basic * 1.25 solid transparent;
+			border-left: $basic solid transparent;
+		}
+		&.urgent-post::before {
+			content: '';
+			position: absolute;
+			left: -$basic * 2;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-top: $basic * 1.25 solid $color-contrast;
+			border-right: $basic solid $color-contrast;
+			border-bottom: $basic * 1.25 solid transparent;
+			border-left: $basic solid transparent;
+		}
+	}
+}
+
 .fosterling-contacts-heading {
 	color: $color-main;
 	text-align: center;
