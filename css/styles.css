@@ -1901,6 +1901,10 @@ aside {
   padding: 8px;
 }
 
+.fosterling .fosterling-teaser .fosterling-img .fosterling-data span svg {
+  height: 90%;
+}
+
 @media screen and (min-width: 589px) {
   .fosterling .fosterling-teaser .fosterling-img .fosterling-data {
     position: absolute;
@@ -1923,7 +1927,7 @@ aside {
     font-family: FontAwesome;
     color: #ebebeb;
     text-align: center;
-    opacity: .5;
+    opacity: .7;
     padding: 0;
   }
   .fosterling .fosterling-teaser .fosterling-img .fosterling-data span:hover {
@@ -2267,6 +2271,20 @@ h5.fosterling-contacts-heading {
   .fosterling-text-more {
     width: calc((100% - 192px) / 4 * 3);
   }
+}
+
+.fosterling-full-top {
+  position: relative;
+}
+
+.brackets {
+  display: inline-block;
+  vertical-align: top;
+  margin: 8px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border-right: 2px solid #a0a0a0;
+  border-left: 2px solid #a0a0a0;
 }
 
 .noscroll {

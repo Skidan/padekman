@@ -262,6 +262,10 @@ aside {
 					line-height: $basic * 2;
 					color: $color-bg;
 					padding: $basic / 2;
+					& svg {
+						height: 90%;
+
+					}
 				}
 				@media screen and (min-width: 589px) {
 					position: absolute;
@@ -279,7 +283,7 @@ aside {
 						font-family: FontAwesome;
 						color: $color-bg;
 						text-align: center;
-						opacity: .5;
+						opacity: .7;
 						padding: 0;
 						&:hover {
 							opacity: 1;
@@ -539,7 +543,19 @@ h5.fosterling-contacts-heading {
 	}
 }
 
-.fosterling-full-top {}
+.fosterling-full-top {
+	position: relative;
+}
+.brackets {
+	display: inline-block;
+	vertical-align: top;
+	margin: $basic / 2;
+	padding: $basic / 4 $basic / 2;
+	border-radius: $basic / 2;
+	border-right: 2px solid $color-neutral;
+	border-left: 2px solid $color-neutral;
+}
+.fosterling-full-img {}
 .fosterling-full-map {}
 .fosterling-full-adopted {}
 .fosterling-full-story {}
