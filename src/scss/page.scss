@@ -258,13 +258,14 @@ aside {
 				text-align: center;
 				background-color: $color-neutral;
 				& span {
+					display: inline-block;
+					vertical-align: top;
 					font-size: $basic * 1.5;
 					line-height: $basic * 2;
 					color: $color-bg;
 					padding: $basic / 2;
 					& svg {
-						height: 90%;
-
+						height: $basic * 1.75;
 					}
 				}
 				@media screen and (min-width: 589px) {
@@ -287,6 +288,10 @@ aside {
 						padding: 0;
 						&:hover {
 							opacity: 1;
+						}
+						& svg {
+							height: $basic * 2.5;
+							padding: $basic / 4;
 						}
 					}
 				}
@@ -545,6 +550,7 @@ h5.fosterling-contacts-heading {
 
 .fosterling-full-top {
 	position: relative;
+	width: 100%;
 }
 .brackets {
 	display: inline-block;
@@ -555,8 +561,36 @@ h5.fosterling-contacts-heading {
 	border-right: 2px solid $color-neutral;
 	border-left: 2px solid $color-neutral;
 }
-.fosterling-full-img {}
+.fosterling-full-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	@media screen and (min-width: 589px) {
+		height: calc(589px / 5 * 3);
+	}
+	@media screen and (min-width: 769px) {
+		height: calc(745px / 5 * 3);
+	}
+	@media screen and (min-width: 1201px) {
+		height: calc(960px / 5 * 3);
+	}
+	@media screen and (min-width: 1601px) {
+		height: calc(1420px / 5 * 3);
+	}
+	@media screen and (min-width: 1921px) {
+		height: calc(1600px / 5 * 3);
+	}
+}
 .fosterling-full-map {}
 .fosterling-full-adopted {}
-.fosterling-full-story {}
+.fosterling-full-story {
+	& p {
+		margin: $basic;
+	}
+}
 .fosterling-full-status {}

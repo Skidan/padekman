@@ -1895,6 +1895,8 @@ aside {
 }
 
 .fosterling .fosterling-teaser .fosterling-img .fosterling-data span {
+  display: inline-block;
+  vertical-align: top;
   font-size: 24px;
   line-height: 32px;
   color: #ebebeb;
@@ -1902,7 +1904,7 @@ aside {
 }
 
 .fosterling .fosterling-teaser .fosterling-img .fosterling-data span svg {
-  height: 90%;
+  height: 28px;
 }
 
 @media screen and (min-width: 589px) {
@@ -1932,6 +1934,10 @@ aside {
   }
   .fosterling .fosterling-teaser .fosterling-img .fosterling-data span:hover {
     opacity: 1;
+  }
+  .fosterling .fosterling-teaser .fosterling-img .fosterling-data span svg {
+    height: 40px;
+    padding: 4px;
   }
 }
 
@@ -2275,6 +2281,7 @@ h5.fosterling-contacts-heading {
 
 .fosterling-full-top {
   position: relative;
+  width: 100%;
 }
 
 .brackets {
@@ -2285,6 +2292,53 @@ h5.fosterling-contacts-heading {
   border-radius: 8px;
   border-right: 2px solid #a0a0a0;
   border-left: 2px solid #a0a0a0;
+}
+
+.fosterling-full-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fosterling-full-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 589px) {
+  .fosterling-full-img {
+    height: calc(589px / 5 * 3);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .fosterling-full-img {
+    height: calc(745px / 5 * 3);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .fosterling-full-img {
+    height: calc(960px / 5 * 3);
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .fosterling-full-img {
+    height: calc(1420px / 5 * 3);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .fosterling-full-img {
+    height: calc(1600px / 5 * 3);
+  }
+}
+
+.fosterling-full-story p {
+  margin: 16px;
 }
 
 .noscroll {
