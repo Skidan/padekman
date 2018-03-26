@@ -284,11 +284,7 @@ aside {
 						font-family: FontAwesome;
 						color: $color-bg;
 						text-align: center;
-						opacity: .7;
 						padding: 0;
-						&:hover {
-							opacity: 1;
-						}
 						& svg {
 							height: $basic * 2.5;
 							padding: $basic / 4;
@@ -373,7 +369,7 @@ aside {
 	line-height: $basic * 1.5;
 	text-align: center;
 	padding: $basic * .5 0;
-	margin: $basic / 2 0;
+	//margin: $basic / 2 0;
 	&.newbie-post {
 		background-color: #ffff00;
 		color: black;
@@ -552,15 +548,7 @@ h5.fosterling-contacts-heading {
 	position: relative;
 	width: 100%;
 }
-.brackets {
-	display: inline-block;
-	vertical-align: top;
-	margin: $basic / 2;
-	padding: $basic / 4 $basic / 2;
-	border-radius: $basic / 2;
-	border-right: 2px solid $color-neutral;
-	border-left: 2px solid $color-neutral;
-}
+
 .fosterling-full-img {
 	width: 100%;
 	height: 100%;
@@ -587,10 +575,96 @@ h5.fosterling-contacts-heading {
 	}
 }
 .fosterling-full-map {}
-.fosterling-full-adopted {}
 .fosterling-full-story {
 	& p {
 		margin: $basic;
 	}
 }
 .fosterling-full-status {}
+
+
+.fosterling-params {
+	display: block;
+	background-color: $color-neutral;
+	//padding: $basic;
+	& span {
+		color: $color-bg;
+	}
+	@media screen and (min-width: 589px) {
+		display: flex;
+		flex-direction: row;
+		margin: 0 $basic $basic $basic;
+		border-bottom-right-radius: $basic;
+		border-bottom-left-radius: $basic;
+		border: 1px solid $color-neutral;
+		border-top: 1px solid $color-dark;
+		box-shadow: 0 $basic / 4 $basic / 2 rgba(0,0,0,.2),
+								0 $basic / 8 $basic / 8 rgba(0,0,0,.5) inset;
+	}
+}
+.icon-holder {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	@media screen and (min-width: 589px) {
+		flex-direction: column;
+	}
+}
+.tag-holder {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.mammal-family, .mammal-sex {
+	display: block;
+	width: 32px;
+	height: 32px;
+	padding: 4px;
+	margin: $basic;
+	border: 1px solid $color-bg;
+	border-radius: $basic / 4;
+	position: relative;
+	@media screen and (min-width: 1600px) {
+		width: 48px;
+		height: 48px;
+	}
+}
+.icon-teaser {
+	width: 100%;
+	@media screen and (min-width: 589px) {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	& .mammal-family, .mammal-sex {
+		margin: $basic / 2;
+		padding: 0;
+		border: none;
+	}
+}
+.todiv {
+	display: block;
+	margin: $basic / 4 $basic;
+	position: relative;
+	margin-left: $basic * 2.5;
+	white-space: nowrap;
+	&::before {
+		content:'\f046';
+		font-family: FontAwesome;
+		// line-height: $basic * 1.5;
+		position: absolute;
+		left: -$basic * 1.5;
+	}
+}
+.circumstances {
+	margin: $basic;
+	padding-bottom: $basic / 2;
+	& h5 {
+		color: $color-bg;
+		font-weight: 700;
+		padding: $basic / 2 0 $basic / 4 0;
+		border-bottom: 1px dashed $color-bg;
+	}
+	& p {
+		color: $color-bg;
+	}
+}
