@@ -264,9 +264,6 @@ aside {
 					line-height: $basic * 2;
 					color: $color-bg;
 					padding: $basic / 2;
-					& svg {
-						height: $basic * 1.75;
-					}
 				}
 				@media screen and (min-width: 589px) {
 					position: absolute;
@@ -285,11 +282,10 @@ aside {
 						color: $color-bg;
 						text-align: center;
 						padding: 0;
-						& svg {
-							height: $basic * 2.5;
-							padding: $basic / 4;
-						}
 					}
+				}
+				@media screen and (min-width: 1600px) {
+					height: $basic * 4;
 				}
 			}
 		}

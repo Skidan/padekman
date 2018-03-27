@@ -1903,10 +1903,6 @@ aside {
   padding: 8px;
 }
 
-.fosterling .fosterling-teaser .fosterling-img .fosterling-data span svg {
-  height: 28px;
-}
-
 @media screen and (min-width: 589px) {
   .fosterling .fosterling-teaser .fosterling-img .fosterling-data {
     position: absolute;
@@ -1931,9 +1927,11 @@ aside {
     text-align: center;
     padding: 0;
   }
-  .fosterling .fosterling-teaser .fosterling-img .fosterling-data span svg {
-    height: 40px;
-    padding: 4px;
+}
+
+@media screen and (min-width: 1600px) {
+  .fosterling .fosterling-teaser .fosterling-img .fosterling-data {
+    height: 64px;
   }
 }
 
