@@ -974,67 +974,241 @@ textarea {
   border-radius: 4px;
 }
 
-.urgent-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.urgent-center {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.urgent-left, .urgent-right {
-  -ms-flex-preferred-size: 64px;
-  flex-basis: 64px;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.urgent-post_carousel {
+.carousel-container {
+  margin: 32px auto;
+  background-color: #ebebeb;
   position: relative;
+  overflow: hidden;
+  width: 240px;
 }
 
-.urgent-post_img {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  background: #a0a0a0;
+@media screen and (min-width: 341px) {
+  .carousel-container {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .carousel-container {
+    width: 440px;
+  }
+}
+
+@media screen and (min-width: 589px) {
+  .carousel-container {
+    width: 560px;
+  }
 }
 
 @media screen and (min-width: 769px) {
-  .urgent-post_img {
-    padding-bottom: 75%;
+  .carousel-container {
+    width: 745px;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .urgent-post_img {
-    padding-bottom: 56.25%;
+  .carousel-container {
+    width: 960px;
   }
 }
 
-.image-inside {
+@media screen and (min-width: 1601px) {
+  .carousel-container {
+    width: 1420px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .carousel-container {
+    width: 1600px;
+  }
+}
+
+.carousel-left, .carousel-right {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(../img/cat-shake-hands.jpg);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-left svg, .carousel-right svg {
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (min-width: 769px) {
+  .carousel-left svg, .carousel-right svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.carousel-left {
+  left: 16px;
+}
+
+.carousel-right {
+  right: 16px;
+}
+
+.carousel-main {
+  position: relative;
+  left: 0px;
+  -webkit-transition: left .5s ease-in;
+  -o-transition: left .5s ease-in;
+  transition: left .5s ease-in;
+}
+
+.carousel {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  width: 240px;
+  height: 240px;
+}
+
+@media screen and (min-width: 341px) {
+  .carousel {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .carousel {
+    width: 440px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 589px) {
+  .carousel {
+    width: 560px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .carousel {
+    width: 745px;
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .carousel {
+    width: 960px;
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .carousel {
+    width: 1420px;
+    height: 720px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .carousel {
+    width: 1600px;
+    height: 960px;
+  }
+}
+
+.carousel-thumbnail {
+  position: relative;
+  display: block;
+  background-position: center;
   background-size: cover;
-  background-position: center center;
+  padding: 0;
+  margin: 0;
+  width: 240px;
+  height: 240px;
+}
+
+@media screen and (min-width: 341px) {
+  .carousel-thumbnail {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .carousel-thumbnail {
+    width: 440px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 589px) {
+  .carousel-thumbnail {
+    width: 560px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .carousel-thumbnail {
+    width: 745px;
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .carousel-thumbnail {
+    width: 960px;
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .carousel-thumbnail {
+    width: 1420px;
+    height: 720px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .carousel-thumbnail {
+    width: 1600px;
+    height: 960px;
+  }
+}
+
+.subinfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.urgent-post_heading {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@media screen and (min-width: 769px) {
+  .urgent-post_heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.urgent-post_descr {
+  text-align: left;
+  margin: 8px 16px;
+  text-indent: 0;
+  margin-top: 0;
 }
 
 #charity {

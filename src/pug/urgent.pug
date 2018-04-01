@@ -1,14 +1,31 @@
 section#urgent.bg-urgent
 	h2.section-heading Urgent #[i(aria-hidden="true").fa.fa-heartbeat] help
 	.container.urgent-container
-		.urgent-left
-			include ../img/arr-left
-		.urgent-center
-			.urgent-post_carousel
-				.urgent-post_img
-					.image-inside
-				h3.urgent-post_heading Mercie
-				p.urgent-post_descr Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam optio quia error omnis commodi ea eius iste magni nihil adipisci.
-			button(type="button").urgent-btn Let them survive #[i().fa.fa-paypal] / #[i().fa.fa-credit-card] 
-		.urgent-right
-			include ../img/arr-right
+		.carousel-container
+			.carousel-main
+				.carousel
+					a(href="#" style="background-image: url(../img/cat-shake-hands.jpg)").carousel-thumbnail
+						.subinfo
+							h3.urgent-post_heading Gladie
+							p.urgent-post_descr Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam optio quia error omnis commodi ea eius iste magni nihil adipisci.
+				.carousel
+					a(href="#" style="background-image: url(../img/cat-shake-hands.jpg)").carousel-thumbnail
+						.subinfo
+							h3.urgent-post_heading Mercie
+							p.urgent-post_descr Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam optio quia error omnis commodi ea eius iste magni nihil adipisci.
+				.carousel
+					a(href="#" style="background-image: url(../img/cat-shake-hands.jpg)").carousel-thumbnail
+						.subinfo
+							h3.urgent-post_heading Lucy
+							p.urgent-post_descr Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam optio quia error omnis commodi ea eius iste magni nihil adipisci.
+				.carousel
+					a(href="#" style="background-image: url(../img/cat-shake-hands.jpg)").carousel-thumbnail
+						.subinfo
+							h3.urgent-post_heading Winkie
+							p.urgent-post_descr Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam optio quia error omnis commodi ea eius iste magni nihil adipisci.
+
+			.carousel-left
+				include ../img/arr-left
+			.carousel-right
+				include ../img/arr-right
+		button(type="button").urgent-btn Let them survive #[i().fa.fa-paypal] / #[i().fa.fa-credit-card]
