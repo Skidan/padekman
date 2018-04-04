@@ -4,10 +4,7 @@
 	background-color: $color-dark;
 	z-index: 100; // over absolute positioned bars
 	@media screen and (min-width: 769px) {
-		//position: fixed;
-		//top: 0;
-		//left: 0;
-		background-color: rgba(59,64,68,.8);
+		background-color: rgb(59,64,68);
 	}
 }
 #navbar {
@@ -133,7 +130,6 @@
 	&:hover {
 		background-color: $color-neutral;
 		color: $color-bg;
-		//text-decoration: underline;
 	}
 	@media screen and (min-width: 769px) and (max-width: 1200px) {
 		font-size: $basic;

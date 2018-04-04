@@ -416,7 +416,7 @@ textarea {
 
 @media screen and (min-width: 769px) {
   #header {
-    background-color: rgba(59, 64, 68, 0.8);
+    background-color: #3b4044;
   }
 }
 
@@ -769,7 +769,7 @@ textarea {
 
 @media screen and (min-width: 1201px) {
   #topper {
-    height: 100vh;
+    height: calc(100vh - 64px);
   }
 }
 
