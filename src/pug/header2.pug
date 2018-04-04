@@ -1,0 +1,28 @@
+header#header
+	nav#navbar.container
+		.mobile-hide
+			#search
+				form(action="")#search_form
+					input(type="text")#search_input
+					button(type="submit")#search_button
+						i.fa.fa-search
+			#mainmenu
+				ul
+					li.current-menu-item
+						a(href="#" target="_self") About us
+					li
+						a(href="#" target="_self") Fosterlings
+					li
+						a(href="#" target="_self") Charity
+					li
+						a(href="#" target="_self") Articles
+		.mobile-show
+			#menu_btn
+				button(type="button")
+					include ../img/menu_btn
+			#logo
+				a(href="#####" target="_self")#logolink
+					#logosvg
+						include ../img/logo
+					#logoname
+						span.logoname Padėk Man

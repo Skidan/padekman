@@ -416,9 +416,6 @@ textarea {
 
 @media screen and (min-width: 769px) {
   #header {
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: rgba(59, 64, 68, 0.8);
   }
 }
@@ -754,6 +751,7 @@ textarea {
 }
 
 #topper {
+  display: block;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -764,7 +762,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 48px);
     background-image: url(../img/topperbg1440.jpg);
   }
 }
