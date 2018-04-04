@@ -1341,6 +1341,30 @@ textarea {
   background-color: #3b4044;
 }
 
+.smplst a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: color .2s, text-shadow .2s;
+  -o-transition: color .2s, text-shadow .2s;
+  transition: color .2s, text-shadow .2s;
+  color: #10b0ca;
+  padding: 0;
+  margin: 0;
+}
+
+.smplst a:hover {
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+.smplst a:active {
+  outline: none;
+  text-shadow: 0 0 8px #10b0ca;
+  color: #3b4044;
+  text-decoration: none;
+}
+
 #modal {
   display: block;
   position: absolute;

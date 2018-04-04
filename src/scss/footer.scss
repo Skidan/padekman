@@ -23,3 +23,23 @@
 	//height: $basic * 8;
 	background-color: $color-dark;
 }
+
+.smplst a {
+	font-family: $font-regular;
+	text-decoration: none;
+	text-shadow: none;
+	transition: color .2s, text-shadow .2s;
+	color: $color-main;
+	padding: 0;
+	margin: 0;
+	&:hover {
+		color: $color-bg;
+		text-decoration: none;
+	}
+	&:active {
+		outline: none;
+		text-shadow: 0 0 $basic/2 $color-main;
+		color: $color-dark;
+		text-decoration: none;
+	}
+}
