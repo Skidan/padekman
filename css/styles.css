@@ -1,3 +1,9 @@
+/*
+    Theme Name: Padek Man
+    Author: Dmytro Skydanenko
+    Version: 1.0
+		Text Domain: padekman
+*/
 * {
   margin: 0;
   padding: 0;
@@ -1303,9 +1309,6 @@ textarea {
 .map-container {
   width: 100%;
   height: 80vh;
-  background-image: url(../img/mappa.jpg);
-  background-size: cover;
-  background-position: center center;
 }
 
 #footer {

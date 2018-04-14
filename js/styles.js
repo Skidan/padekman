@@ -1,3 +1,4 @@
+
 console.log("styles.js connected");
 
 // DOM variables
@@ -5,15 +6,19 @@ var btnMainmenu, mobileHide;
 btnMainmenu = document.getElementById("menu_icon");
 mobileHide = document.querySelector(".mobile-hide");
 
-// NAIN MENU ACTIONS
-// toggling menu on menu btnclick in mobile
-// function toggleClass(className) {
-	
-// }
+// MAIN MENU ACTIONS
+function toggleClass(domElement, classname) {
+	if (domElement.classList.contains(classname)) {
+		domElement.classList.remove(classname);
+	} else {
+		domElement.classList.add(classname);
+	}
+}
 
+// toggling menu on menu btnclick in mobile
 btnMainmenu.addEventListener("click", function(){
-	btnMainmenu.classList.toggle("menuexpanded");
-  mobileHide.classList.toggle("menuheight");
+	toggleClass(btnMainmenu, "menuexpanded");
+	toggleClass(mobileHide, 'menuheight');
 });
 // close menu on window resize
 window.addEventListener("resize", function() {
