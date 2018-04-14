@@ -7,6 +7,10 @@ mobileHide = document.querySelector(".mobile-hide");
 
 // NAIN MENU ACTIONS
 // toggling menu on menu btnclick in mobile
+// function toggleClass(className) {
+	
+// }
+
 btnMainmenu.addEventListener("click", function(){
 	btnMainmenu.classList.toggle("menuexpanded");
   mobileHide.classList.toggle("menuheight");
