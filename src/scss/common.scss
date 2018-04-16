@@ -1,5 +1,5 @@
 // font-init
-a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input
+a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input, cite
 {font-size: $basic;}
 
 html {
@@ -41,7 +41,7 @@ h1 {
 	}
 }
 
-h2 {
+h2, h2 span {
 	font-family: $font-heading;
 	font-weight: 700;
 	font-size: $basic * 2;
@@ -165,6 +165,7 @@ img {
   width: 100%;
   image-rendering: -webkit-optimize-contrast;
 }
+
 
 textarea {
 	font-size: $basic;

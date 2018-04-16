@@ -62,3 +62,138 @@
   background-color: $color-main;
   border: 1px solid $color-main;
 }
+
+// COMMENTS SECTION
+.comments-list {
+  border-bottom: 1px dashed $color-neutral;
+}
+.comment-title, .comment-title * {
+  font-size: $basic * 2.5; 
+  line-height: $basic * 3;
+}
+.comment {
+  padding: $basic / 2;
+  padding-top: $basic;
+  //border: 1px solid darken($color-bg, 15%);
+}
+
+.parent {
+  border: 1px solid darken($color-bg, 5%);
+  overflow: hidden;
+  margin-bottom: $basic;
+}
+#comments .children {
+  margin-left: $basic;
+  border-left: $basic / 4 solid $color-main;
+  overflow: hidden;
+  box-shadow: 0 0 $basic rgba(0,0,0,.1);
+  // &::before {
+  //   content: '\f0a9';
+  //   font-family: FontAwesome;
+  //   font-size: $basic;
+  //   color: $color-main;
+
+  // }
+}
+.depth-1 {
+  //background-color: darken($color-bg, 5%);
+}
+.depth-2 {
+  //background-color: darken($color-bg, 5%);
+  //border: 1px solid darken($color-bg, 10%);
+}
+.depth-3 {
+  //background-color: darken($color-bg, 7%);
+  //border: 1px solid darken($color-bg, 15%);
+}
+.even {
+  background: rgba(220,220,220,0.5);
+}
+.odd {
+  background: rgba(220,220,220,0);
+}
+.vcard img {
+	width: auto;
+}
+.vcard span, .vcard cite {
+  display: inline-block;
+  font-family: $font-regular;
+  font-size: $basic * 1.5;
+  padding: $basic * .75 0;
+  //line-height: $basic * 3;
+  color: $color-main;
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: top;
+}
+.vcard cite {
+  padding-left: $basic;
+}
+#comments p {
+  margin: $basic;
+  font-size: $basic * 1.25;
+}
+
+#respond p {
+  text-indent: 0;
+}
+
+.reply {
+  padding: $basic / 2 0;
+}
+.comment-reply-link {
+  display: inline-block;
+  padding: $basic / 4 $basic;
+  background: $color-bg;
+  border: 1px solid $color-main;
+  color: $color-main;
+  border-radius: $basic / 4;
+  transition: color .3s, background .3s;
+  &:hover {
+    background: $color-main;
+    color: $color-bg;
+  }
+  &:active {
+    background: darken($color-main, 5%);
+    color: $color-bg;
+  }
+}
+.comment-reply-title {
+  margin-top: $basic * 1.5;
+}
+.logged-in-as, .comment-form-comment, .form-submit {
+  text-indent: 0;
+}
+#comments label {
+  display: block;
+  color: $color-neutral;
+}
+
+#submit {
+  display: inline-block;
+  padding: $basic / 2 $basic;
+  background: $color-bg;
+  border: 1px solid $color-main;
+  color: $color-main;
+  border-radius: $basic / 4;
+  transition: color .3s, background .3s;
+  &:hover {
+    background: $color-main;
+    color: $color-bg;
+  }
+  &:active {
+    background: darken($color-main, 5%);
+    color: $color-bg;
+  }
+}
+#comment {
+  display: block;
+}
+.required {
+  color: $color-contrast;
+}
+
+#author, #email, #url {
+  display: inline-block;
+  padding: $basic / 4;
+}

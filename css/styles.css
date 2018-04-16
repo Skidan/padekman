@@ -211,7 +211,7 @@
   transition: all .15s ease-in-out;
 }
 
-a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input {
+a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input, cite {
   font-size: 16px;
 }
 
@@ -255,7 +255,7 @@ h1 span {
   color: #10b0ca;
 }
 
-h2 {
+h2, h2 span {
   font-family: "Cormorant Infant", serif;
   font-weight: 700;
   font-size: 32px;
@@ -2722,4 +2722,142 @@ h5.fosterling-contacts-heading {
   color: #ebebeb;
   background-color: #10b0ca;
   border: 1px solid #10b0ca;
+}
+
+.comments-list {
+  border-bottom: 1px dashed #a0a0a0;
+}
+
+.comment-title, .comment-title * {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.comment {
+  padding: 8px;
+  padding-top: 16px;
+}
+
+.parent {
+  border: 1px solid #dedede;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+#comments .children {
+  margin-left: 16px;
+  border-left: 4px solid #10b0ca;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.even {
+  background: rgba(220, 220, 220, 0.5);
+}
+
+.odd {
+  background: rgba(220, 220, 220, 0);
+}
+
+.vcard img {
+  width: auto;
+}
+
+.vcard span, .vcard cite {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding: 12px 0;
+  color: #10b0ca;
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.vcard cite {
+  padding-left: 16px;
+}
+
+#comments p {
+  margin: 16px;
+  font-size: 20px;
+}
+
+#respond p {
+  text-indent: 0;
+}
+
+.reply {
+  padding: 8px 0;
+}
+
+.comment-reply-link {
+  display: inline-block;
+  padding: 4px 16px;
+  background: #ebebeb;
+  border: 1px solid #10b0ca;
+  color: #10b0ca;
+  border-radius: 4px;
+  -webkit-transition: color .3s, background .3s;
+  -o-transition: color .3s, background .3s;
+  transition: color .3s, background .3s;
+}
+
+.comment-reply-link:hover {
+  background: #10b0ca;
+  color: #ebebeb;
+}
+
+.comment-reply-link:active {
+  background: #0e9bb2;
+  color: #ebebeb;
+}
+
+.comment-reply-title {
+  margin-top: 24px;
+}
+
+.logged-in-as, .comment-form-comment, .form-submit {
+  text-indent: 0;
+}
+
+#comments label {
+  display: block;
+  color: #a0a0a0;
+}
+
+#submit {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #ebebeb;
+  border: 1px solid #10b0ca;
+  color: #10b0ca;
+  border-radius: 4px;
+  -webkit-transition: color .3s, background .3s;
+  -o-transition: color .3s, background .3s;
+  transition: color .3s, background .3s;
+}
+
+#submit:hover {
+  background: #10b0ca;
+  color: #ebebeb;
+}
+
+#submit:active {
+  background: #0e9bb2;
+  color: #ebebeb;
+}
+
+#comment {
+  display: block;
+}
+
+.required {
+  color: #da4453;
+}
+
+#author, #email, #url {
+  display: inline-block;
+  padding: 4px;
 }
