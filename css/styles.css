@@ -2728,28 +2728,79 @@ h5.fosterling-contacts-heading {
   border-bottom: 1px dashed #a0a0a0;
 }
 
+img.avatar {
+  display: none;
+}
+
+@media screen and (min-width: 589px) {
+  img.avatar {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  img.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+}
+
 .comment-title, .comment-title * {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 48px;
+}
+
+@media screen and (min-width: 769px) {
+  .comment-title, .comment-title * {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .comment {
   padding: 8px;
-  padding-top: 16px;
+}
+
+@media screen and (min-width: 589px) {
+  .comment {
+    padding-top: 16px;
+  }
 }
 
 .parent {
-  border: 1px solid #dedede;
+  border: 1px solid #d2d2d2;
   overflow: hidden;
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 769px) {
+  .parent {
+    border: 1px solid #dedede;
+  }
+}
+
 #comments .children {
-  margin-left: 16px;
-  border-left: 4px solid #10b0ca;
+  margin-left: 4px;
+  border-left: 2.66667px solid #10b0ca;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 589px) {
+  #comments .children {
+    margin-left: 8px;
+    border-left: 4px solid #10b0ca;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #comments .children {
+    margin-left: 16px;
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .even {
@@ -2767,21 +2818,47 @@ h5.fosterling-contacts-heading {
 .vcard span, .vcard cite {
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  padding: 12px 0;
+  font-size: 20px;
   color: #10b0ca;
   font-style: normal;
   font-weight: 700;
   vertical-align: top;
 }
 
+@media screen and (min-width: 589px) {
+  .vcard span, .vcard cite {
+    font-size: 20px;
+    padding: 6px 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .vcard span, .vcard cite {
+    font-size: 24px;
+    padding: 12px 0;
+  }
+}
+
 .vcard cite {
-  padding-left: 16px;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 589px) {
+  .vcard cite {
+    padding-left: 16px;
+  }
 }
 
 #comments p {
-  margin: 16px;
-  font-size: 20px;
+  margin: 8px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 769px) {
+  #comments p {
+    margin: 16px;
+    font-size: 20px;
+  }
 }
 
 #respond p {
@@ -2851,6 +2928,7 @@ h5.fosterling-contacts-heading {
 
 #comment {
   display: block;
+  width: 100%;
 }
 
 .required {

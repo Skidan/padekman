@@ -67,26 +67,55 @@
 .comments-list {
   border-bottom: 1px dashed $color-neutral;
 }
+img.avatar {
+  display: none;
+  @media screen and (min-width: 589px) {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+  }
+  @media screen and (min-width: 769px) {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+}
 .comment-title, .comment-title * {
-  font-size: $basic * 2.5; 
+  font-size: $basic * 2;
   line-height: $basic * 3;
+  @media screen and (min-width: 769px) {
+    font-size: $basic * 2.5; 
+    line-height: $basic * 3;
+  }
 }
 .comment {
   padding: $basic / 2;
-  padding-top: $basic;
+  @media screen and (min-width: 589px) {
+    padding-top: $basic;
+  }
   //border: 1px solid darken($color-bg, 15%);
 }
 
 .parent {
-  border: 1px solid darken($color-bg, 5%);
+  border: 1px solid darken($color-bg, 10%);
   overflow: hidden;
   margin-bottom: $basic;
+  @media screen and (min-width: 769px) {
+    border: 1px solid darken($color-bg, 5%);
+  }
 }
 #comments .children {
-  margin-left: $basic;
-  border-left: $basic / 4 solid $color-main;
+  margin-left: $basic / 4;
+  border-left: $basic / 6 solid $color-main;
   overflow: hidden;
-  box-shadow: 0 0 $basic rgba(0,0,0,.1);
+  @media screen and (min-width: 589px) {
+    margin-left: $basic / 2;
+    border-left: $basic / 4 solid $color-main;
+  }
+  @media screen and (min-width: 769px) {
+    margin-left: $basic;
+    box-shadow: 0 0 $basic rgba(0,0,0,.1);
+  }
   // &::before {
   //   content: '\f0a9';
   //   font-family: FontAwesome;
@@ -118,20 +147,36 @@
 .vcard span, .vcard cite {
   display: inline-block;
   font-family: $font-regular;
-  font-size: $basic * 1.5;
-  padding: $basic * .75 0;
+  font-size: $basic * 1.25;
+  //padding: $basic / 6;
   //line-height: $basic * 3;
   color: $color-main;
   font-style: normal;
   font-weight: 700;
   vertical-align: top;
+  @media screen and (min-width: 589px) {
+    font-size: $basic * 1.25;
+    padding: $basic * .375 0;
+  }
+  @media screen and (min-width: 769px) {
+    font-size: $basic * 1.5;
+    padding: $basic * .75 0;
+  }
+  
 }
 .vcard cite {
-  padding-left: $basic;
+  padding-left: 0;
+  @media screen and (min-width: 589px) {
+    padding-left: $basic;
+  }
 }
 #comments p {
-  margin: $basic;
-  font-size: $basic * 1.25;
+  margin: $basic / 2;
+  font-size: $basic;
+  @media screen and (min-width: 769px) {
+    margin: $basic;
+    font-size: $basic * 1.25;
+  }
 }
 
 #respond p {
@@ -188,6 +233,8 @@
 }
 #comment {
   display: block;
+  width: 100%;
+
 }
 .required {
   color: $color-contrast;
