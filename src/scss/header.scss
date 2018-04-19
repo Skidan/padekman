@@ -63,30 +63,98 @@
 		order: 3;
 	}
 }
+#search_form {
+	margin: 0 auto;
+	text-align: center;
+}
 #search_input, #search_button {
 	display: inline-block;
+	vertical-align: top;
 	padding: 0;
-	color: $color-bg;
+	color: $color-neutral;
 	line-height: $basic * 2;
 	height: $basic * 2;
 	font-size: $basic;
-	margin: $basic / 2 0;
+	border: 1px solid $color-neutral;
+	margin-bottom: $basic / 2;
+	border-radius: $basic / 4;
+	box-shadow: 0 4px 4px rgba(31,57,72,.2);
 	@media screen and (min-width: 1201px) {
 		margin: $basic 0;
 	}
 }
 #search_button {
 	width: $basic * 2;
-	height: $basic * 2;
-	margin: 0;
-	padding: 0 $basic / 2;
-	background-color: $color-neutral;
+	height: 34px;
+	//padding: $basic / 2 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left: none;
+	background-color: rgba(16,176,202,.3);
+	border-color: darken($color-main, 10%);
+  color: rgb(31,57,72);
+	border-color: darken($color-main, 10%);
+	transition: background-color .3s, color .3s, box-shadow .3s;
+	&:hover {
+    background-color: darken($color-main, 10%);
+    color: $color-bg;
+		box-shadow: 0 4px 4px rgba(18,126,155,.4);
+		& i {
+			color: $color-bg;
+		}
+	}
+	& i {
+		display: block;
+		color: $color-main;
+		font-size: $basic;
+		padding: $basic / 2 0;
+		transition: color .3s;
+	}
 }
 #search_input {
-	width: calc(100% - 32px);
+	background-color: whitesmoke;
+	width: calc(100% - 80px);
+	padding-left: $basic / 2;
+	border-top-right-radius: 0;
 	color: $color-dark;
+	border-bottom-right-radius: 0;
+	border-right: none;
+	transition: background-color .3s, color .3s, box-shadow .3s;
+	&:hover {
+    background-color: rgba(16,176,202,.1);
+    box-shadow: 0 4px 4px rgba(18,126,155,.4);
+  }
+	@media screen and (min-width: 1201px) {
+		margin: $basic 0;
+	}
+}
+.search-label {
+	display: block;
+	font-family: $font-regular;
+	width: calc(100% - 32px);
+	font-size: $basic * 1.5;
+	color: $color-main;
 	@media screen and (min-width: 769px) {
-		width: $basic * 8;
+		font-family: $font-heading;
+		font-size: $basic * 3;
+	}
+}
+
+#search-button--header {
+	width: $basic * 2;
+	height: $basic * 2;
+	margin: $basic / 2 0;
+	padding: $basic / 2;
+	font-size: $basic;
+	color: $color-neutral;
+	transition: color .3s;
+	&:hover {
+		color: $color-bg;
+	}
+	@media screen and (min-width: 1201px) {
+		font-size: $basic * 1.5;
+		height: $basic * 3;
+		width: $basic * 3;
 	}
 }
 
