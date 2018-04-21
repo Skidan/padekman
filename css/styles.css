@@ -629,6 +629,8 @@ textarea {
 }
 
 #search-button--header {
+  display: inline-block;
+  vertical-align: top;
   width: 32px;
   height: 32px;
   margin: 8px 0;
