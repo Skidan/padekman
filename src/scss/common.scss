@@ -1,5 +1,5 @@
 // font-init
-a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input, cite
+a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input, cite, ol, ul, li
 {font-size: $basic;}
 
 html {
@@ -169,4 +169,26 @@ img {
 
 textarea {
 	font-size: $basic;
+}
+
+
+ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.content-posts ol, .content-posts ul {
+	font-family: $font-regular;
+	font-size: $basic;
+	color: $color-dark;
+	margin: $basic / 2;
+	& li {
+		margin: 0 $basic / 2;
+		margin-bottom: $basic;
+		line-height: $basic * 1.5;
+	}
+}
+.content-posts ul {
+	list-style-type: disc;
 }
