@@ -248,3 +248,12 @@ img.avatar {
 .testbox {
   outline: 1px dashed red;
 }
+
+.subactions {
+  align: right;
+  text-align: right;
+  padding: 0 $basic / 2 $basic $basic / 2;
+  & .btn-primary {
+    color: $color-bg;
+  }
+}

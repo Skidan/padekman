@@ -3182,3 +3182,13 @@ img.avatar {
 .testbox {
   outline: 1px dashed red;
 }
+
+.subactions {
+  align: right;
+  text-align: right;
+  padding: 0 8px 16px 8px;
+}
+
+.subactions .btn-primary {
+  color: #ebebeb;
+}
