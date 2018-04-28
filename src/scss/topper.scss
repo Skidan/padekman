@@ -77,12 +77,13 @@
 	}
 }
 
-.subheading {
+span.subheading {
 	display: block;
 	margin:  $basic / 2 auto;
 	color: $color-dark;
 	font-family: $font-regular;
 	text-align: center;
+	padding-bottom: 0;
 	@media screen and (min-width: 589px) {
 		text-align: left;
 		margin: $basic / 2;
