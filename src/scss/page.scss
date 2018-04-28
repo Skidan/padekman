@@ -711,23 +711,32 @@ h5.fosterling-contacts-heading {
 		}
 	}
 	& .show-more-info {
-		display: block;
+		display: none;
 		color: $color-neutral;
 		&::before {
 			content: '\f05a';
 		}
+		@media screen and (min-width: 589px) {
+			display: block;
+		}
 	}
 	& .found-date {
-		display: none;
+		display: block;
 		&::before {
 			content: '\f073';
+		}
+		@media screen and (min-width: 589px) {
+			display: none;
 		}
 	}
 
 	& .found-place {
-		display: none;
+		display: block;
 		&::before {
 			content: '\f124';
+		}
+		@media screen and (min-width: 589px) {
+			display: none;
 		}
 	}
 }
