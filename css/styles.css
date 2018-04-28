@@ -2798,6 +2798,20 @@ h5.fosterling-contacts-heading {
 @media screen and (min-width: 1201px) {
   .post-teaser {
     height: 320px;
+    -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    -webkit-transition: -webkit-transform .3s, -webkit-box-shadow .3s;
+    transition: -webkit-transform .3s, -webkit-box-shadow .3s;
+    -o-transition: transform .3s, box-shadow .3s;
+    transition: transform .3s, box-shadow .3s;
+    transition: transform .3s, box-shadow .3s, -webkit-transform .3s, -webkit-box-shadow .3s;
+  }
+  .post-teaser:hover {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
   }
 }
 

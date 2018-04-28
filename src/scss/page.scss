@@ -671,6 +671,12 @@ h5.fosterling-contacts-heading {
 	height: 200px;
 	@media screen and (min-width: 1201px) {
 		height: 320px;
+		box-shadow: 0 $basic / 2 $basic / 2 rgba(0,0,0,.3);
+		transition: transform .3s, box-shadow .3s;
+		&:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 $basic $basic rgba(0,0,0,.2);
+		}
 	}
 	@media screen and (min-width: 1601px) {
 		height: 420px;
