@@ -250,10 +250,20 @@ img.avatar {
 }
 
 .subactions {
-  align: right;
-  text-align: right;
   padding: 0 $basic / 2 $basic $basic / 2;
+  align: center;
+  text-align: center;
   & .btn-primary {
     color: $color-bg;
+  }
+  & hr.long {
+    display: block;
+  }
+  @media screen and (min-width: 589px) {
+    align: right;
+    text-align: right;
+    & hr.long {
+      display: none;
+    }
   }
 }

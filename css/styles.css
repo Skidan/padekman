@@ -3184,11 +3184,25 @@ img.avatar {
 }
 
 .subactions {
-  align: right;
-  text-align: right;
   padding: 0 8px 16px 8px;
+  align: center;
+  text-align: center;
 }
 
 .subactions .btn-primary {
   color: #ebebeb;
+}
+
+.subactions hr.long {
+  display: block;
+}
+
+@media screen and (min-width: 589px) {
+  .subactions {
+    align: right;
+    text-align: right;
+  }
+  .subactions hr.long {
+    display: none;
+  }
 }
