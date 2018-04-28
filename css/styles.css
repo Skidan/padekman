@@ -2789,6 +2789,96 @@ h5.fosterling-contacts-heading {
   color: #ebebeb;
 }
 
+.post-teaser {
+  display: block;
+  position: relative;
+  height: 200px;
+}
+
+@media screen and (min-width: 1201px) {
+  .post-teaser {
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .post-teaser {
+    height: 420px;
+  }
+}
+
+.post-teaser--info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(59, 64, 68, 0.4);
+  padding: 8px;
+  text-align: left;
+  width: calc(100% - 16px);
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.post-teaser--info .found-date, .post-teaser--info .found-place, .post-teaser--info .show-more-info {
+  display: block;
+  position: relative;
+  padding: 4px 0;
+  padding-left: 24px;
+  color: #ebebeb;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.post-teaser--info .found-date::before, .post-teaser--info .found-place::before, .post-teaser--info .show-more-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #10b0ca;
+  padding: 4px 0;
+}
+
+.post-teaser--info .show-more-info {
+  display: block;
+  color: #a0a0a0;
+}
+
+.post-teaser--info .show-more-info::before {
+  content: '\f05a';
+}
+
+.post-teaser--info .found-date {
+  display: none;
+}
+
+.post-teaser--info .found-date::before {
+  content: '\f073';
+}
+
+.post-teaser--info .found-place {
+  display: none;
+}
+
+.post-teaser--info .found-place::before {
+  content: '\f124';
+}
+
+.post-teaser:hover .post-teaser--info {
+  background-color: rgba(59, 64, 68, 0.7);
+}
+
+.post-teaser:hover .post-teaser--info .found-date, .post-teaser:hover .post-teaser--info .found-place {
+  display: block;
+}
+
+.post-teaser:hover .post-teaser--info .show-more-info {
+  display: none;
+}
+
 .noscroll {
   overflow-y: hidden;
 }
@@ -3073,4 +3163,8 @@ img.avatar {
 #author, #email, #url {
   display: inline-block;
   padding: 4px;
+}
+
+.testbox {
+  outline: 1px dashed red;
 }

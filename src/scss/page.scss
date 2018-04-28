@@ -664,3 +664,74 @@ h5.fosterling-contacts-heading {
 		color: $color-bg;
 	}
 }
+
+.post-teaser {
+	display: block;
+	position: relative;
+	height: 200px;
+	@media screen and (min-width: 1201px) {
+		height: 320px;
+	}
+	@media screen and (min-width: 1601px) {
+		height: 420px;
+	}
+}
+.post-teaser--info {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(59,64,68,.4);
+	padding: $basic / 2;
+	text-align: left;
+	width: calc(100% - 16px);
+	transition: background-color .3s;
+	& .found-date, .found-place, .show-more-info {
+		display: block;
+		position: relative;
+		padding: $basic / 4 0;
+		padding-left: $basic * 1.5;
+		color: $color-bg;
+		transition: color .3s;
+		&::before {
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: FontAwesome;
+			font-size: $basic;
+			color: $color-main;
+			padding: $basic / 4 0;
+		}
+	}
+	& .show-more-info {
+		display: block;
+		color: $color-neutral;
+		&::before {
+			content: '\f05a';
+		}
+	}
+	& .found-date {
+		display: none;
+		&::before {
+			content: '\f073';
+		}
+	}
+
+	& .found-place {
+		display: none;
+		&::before {
+			content: '\f124';
+		}
+	}
+}
+.post-teaser:hover {
+	& .post-teaser--info {
+		background-color: rgba(59,64,68,.7);
+		& .found-date, .found-place {
+			display: block;
+		}
+		& .show-more-info {
+			display: none;
+		}
+	}	
+}
