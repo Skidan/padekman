@@ -2912,6 +2912,10 @@ h5.fosterling-contacts-heading {
   display: none;
 }
 
+.heading-excerpt h3, .heading-excerpt p {
+  margin: 16px;
+}
+
 .noscroll {
   overflow-y: hidden;
 }

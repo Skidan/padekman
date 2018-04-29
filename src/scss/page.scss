@@ -751,3 +751,9 @@ h5.fosterling-contacts-heading {
 		}
 	}	
 }
+
+.heading-excerpt {
+	& h3, & p {
+		margin: $basic;
+	}
+}
