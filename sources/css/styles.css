@@ -1650,7 +1650,7 @@ aside {
   display: block;
   padding: 8px 16px;
   color: #ebebeb;
-  white-space: wrap;
+  white-space: normal;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis; }
