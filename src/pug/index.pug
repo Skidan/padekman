@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 html(lang="en")
-	include head
+	include _head
 	body
-		include mixins
+		include _mixins
 		#wrapper
-			include header
+			include _header
 			main#main
-				include topper
-				include feedback
-				include urgent
-				include last-found
-				include charity
-				include map
-			include footer
+				include _topper
+				include _feedback
+				include _urgent
+				include _last-found
+				include _charity
+				include _map
+			include _footer
 			//- #modal
 			//- 	#modal-window
 			//- 			p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quis!
-		include scripts
+		include _scripts

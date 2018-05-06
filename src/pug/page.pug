@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 //- defLang="ru"
 html(lang="en") 
-	include head
+	include _head
 	body
-		include mixins
+		include _mixins
 		#wrapper
-			include header
+			include _header
 			main#main
-				include pagetop
+				include _pagetop
 				section#content
 					.container
 						.metabox
@@ -31,8 +31,8 @@ html(lang="en")
 								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi numquam fugiat, doloribus, nemo non quod, totam eos error iure eius impedit vero! Vel ipsam velit numquam illo alias facilis, libero necessitatibus quidem, perferendis temporibus a soluta. Esse veniam ullam, molestias quidem, unde, eius deleniti reiciendis laudantium tenetur architecto incidunt dicta!
 							
 
-			include footer
+			include _footer
 			//- #modal
 			//- 	#modal-window
 			//- 		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quis!
-		include scripts
+		include _scripts

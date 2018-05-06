@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 //- defLang="ru"
 html(lang="en") 
-	include head
+	include _head
 	body
-		include mixins
+		include _mixins
 		#wrapper
-			include header
+			include _header
 			main#main
-				include pagetop
+				include _pagetop
 				section#content
 					.container
 						.metabox
 							a(href="#").metabox-home #[i(aria-hidden="true").fa.fa-home] Back to Home
 							span.metabox-main Our fosterlings
 						#content-box
-							//- aside
-							//- 	.page-navigation
+							aside
+								.page-navigation
+									ul
+										li marena
+										li sdfdfs
+										li sdfgdsf
+										li tgrt
 							.content-posts
 								//- start of teaser
 								.fosterling
@@ -66,8 +71,8 @@ html(lang="en")
 												input(type="text" size="30" placeholder="Nickname" required)
 												textarea(rows="4" placeholder="your message (400 words max)...")
 												button(type="button" required).btn Leave comment
-			include footer
+			include _footer
 			//- #modal
 			//- 	#modal-window
 			//- 		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quis!
-		include scripts
+		include _scripts
