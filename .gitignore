@@ -1,2 +1,6 @@
 prepros-6.config
 todo.xlsx
+.vscode
+node_modules/
+bower_components/
+lib/
