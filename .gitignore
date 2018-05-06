@@ -4,3 +4,4 @@ todo.xlsx
 node_modules/
 bower_components/
 lib/
+package-lock.json
