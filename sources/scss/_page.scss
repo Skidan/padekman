@@ -88,13 +88,17 @@
 
 #content-box {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	@media screen and (min-width: 769px) {
+		flex-direction: row;
+	}
 }
 aside {
 	order: 2;
 	flex-basis: 180px;
 	flex-grow: 0;
 	flex-shrink: 0;
+	overflow: hidden;
 }
 .content-posts {
 	order: 1;
@@ -112,6 +116,9 @@ aside {
 	display: block;
 	padding: $basic / 2 $basic;
 	color: $color-bg;
+	white-space: wrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .page-navigation-home {
 	background-color: $color-main;
