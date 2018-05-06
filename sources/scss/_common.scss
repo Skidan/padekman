@@ -1,0 +1,194 @@
+// font-init
+a, p, span, h1, h2, h3, h4, h5, h6, select, option, button, label, figcaption, em, strong, input, cite, ol, ul, li
+{font-size: $basic;}
+
+html {
+	font-size: $basic;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	min-width: 300px;
+	background-color: $color-bg;
+}
+
+section {
+	display: block;
+	width: 100%;
+}
+
+article {
+	display: block;
+	width: calc(100% - 16px);
+	margin: 0 $basic / 2;
+}
+
+h1 {
+	font-family: $font-heading;
+	font-weight: 400;
+	font-size: $basic * 3;
+	line-height: $basic * 4;
+	color: $color-main;
+	& span {
+		font-family: $font-heading;
+		font-weight: 400;
+		font-size: $basic * 3;
+		line-height: $basic * 4;
+		color: $color-main;
+	}
+}
+
+h2, h2 span {
+	font-family: $font-heading;
+	font-weight: 700;
+	font-size: $basic * 2;
+	line-height: $basic * 3;
+	color: $color-main;
+}
+
+h3 {
+	font-family: $font-regular;
+	font-weight: 400;
+	font-size: $basic * 1.5;
+	line-height: $basic * 2;
+	color: $color-main;
+}
+h4 {
+	font-family: $font-regular;
+	font-weight: 400;
+	font-size: $basic * 1.25;
+	line-height: $basic * 1.75;
+	color: $color-bg;
+}
+h5 {
+	color: $color-main;
+	font-size: $basic;
+	font-weight: 400;
+	font-family: $font-regular;
+}
+//h6 {}
+
+hr {
+	width: 80%;
+	height: 2px;
+	margin: $basic / 2 10%;
+	background: $color-main;
+	&.spacer {
+		margin: $basic 0;
+	}
+	&.long {
+		width: calc(100% - 8px);
+		margin: $basic / 2 4px;
+	}
+	&.regular {
+		background: $color-neutral;
+	}
+}
+
+p {
+	font-family: $font-regular;
+	color: $color-dark;
+	line-height: $basic * 1.5;
+	text-indent: $basic;
+}
+
+a {
+	font-family: $font-regular;
+	text-decoration: none;
+	text-shadow: none;
+	transition: color .2s, text-shadow .2s;
+	color: $color-main;
+	
+	padding: 0;
+	margin: 0;
+	&:hover {
+		color: $color-dark;
+		text-decoration: none;
+	}
+	&:active {
+		outline: none;
+		text-shadow: 0 0 $basic/2 $color-main;
+		color: $color-dark;
+		text-decoration: none;
+	}
+}
+
+button {
+	background: none;
+	display: block;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+figure {
+	padding: $basic;
+	margin: $basic / 2;
+	background: $color-bg;
+	border: 1px solid $color-neutral;
+	border-radius: $basic / 2;
+}
+
+figcaption {
+	font-family: $font-regular;
+	font-size: $basic;
+	font-style: italic;
+	color: $color-neutral;
+	text-align: left;
+	line-height: $basic * 1.5;
+	& p {
+		margin: 0 !important;
+	}
+}
+#wrapper {
+	display: table;
+}
+main, footer {
+	display: table-row;
+}
+main {
+	height: 100%;
+}
+
+span {
+	color: $color-neutral;
+	font-family: $font-regular;
+}
+
+img {
+  width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+
+textarea {
+	font-size: $basic;
+}
+
+
+ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.content-posts ol, .content-posts ul {
+	font-family: $font-regular;
+	font-size: $basic;
+	color: $color-dark;
+	margin: $basic / 2;
+	& li {
+		margin: 0 $basic / 2;
+		margin-bottom: $basic;
+		line-height: $basic * 1.5;
+	}
+}
+.content-posts ul {
+	list-style-type: disc;
+}

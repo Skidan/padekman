@@ -1,0 +1,181 @@
+
+#urgent {
+	@media screen and (min-width: 769px) {
+		padding: $basic * 3 0;
+	}
+}
+
+.bg-urgent {
+  color: $color-neutral;
+  & span {
+    color: $color-contrast;
+  }
+  & h2 {
+    color: $color-contrast;
+  }
+  & p {
+    color: $color-neutral;
+  }
+}
+
+.urgent-btn {
+	display: block;
+	margin: $basic auto;
+	background: $color-contrast;
+	color: $color-bg;
+	line-height: $basic;
+	padding: $basic / 2 $basic * 2;
+	border-radius: $basic / 4;
+}
+.carousel-container {
+	margin: 32px auto;
+	background-color: #ebebeb;
+	position: relative;
+	overflow: hidden;
+	width: 240px;
+	@media screen and (min-width: 341px) {
+		width: 300px;
+	}
+	@media screen and (min-width: 481px) {
+		width: 440px;
+	}
+	@media screen and (min-width: 589px) {
+		width: 560px;
+	}
+	@media screen and (min-width: 769px) {
+		width: 745px;
+	}
+	@media screen and (min-width: 1201px) {
+		width: 960px;
+	}
+	@media screen and (min-width: 1601px) {
+		width: 1420px;
+	}
+	@media screen and (min-width: 1921px) {
+		width: 1600px;
+	}
+}
+
+.carousel-left, .carousel-right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0,0,0,.25);
+	border-radius: 50%;
+	cursor: pointer;
+	& svg {
+		width: $basic * 3;
+		height: $basic * 3;
+		@media screen and (min-width: 769px) {
+			width: $basic * 5;
+			height: $basic * 5;
+		}
+	}
+}
+.carousel-left {left: 16px;}
+.carousel-right {right: 16px;}
+
+.carousel-main {
+	position: relative;
+	left: 0px;
+	transition: left .5s ease-in; 
+}
+.carousel {
+	position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+	text-align: center;
+	font-size: 16px;
+	width: 240px;
+	height: 240px;
+	@media screen and (min-width: 341px) {
+		width: 300px;
+		height: 300px;
+	}
+	@media screen and (min-width: 481px) {
+		width: 440px;
+		height: 320px;
+	}
+	@media screen and (min-width: 589px) {
+		width: 560px;
+		height: 320px;
+	}
+	@media screen and (min-width: 769px) {
+		width: 745px;
+		height: 420px;
+	}
+	@media screen and (min-width: 1201px) {
+		width: 960px;
+		height: 480px;
+	}
+	@media screen and (min-width: 1601px) {
+		width: 1420px;
+		height: 720px;
+	}
+	@media screen and (min-width: 1921px) {
+		width: 1600px;
+		height: 960px;
+	}
+}
+.carousel-thumbnail {
+	position: relative;
+	display: block;
+	background-position: center;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+	width: 240px;
+	height: 240px;
+	@media screen and (min-width: 341px) {
+		width: 300px;
+		height: 300px;
+	}
+	@media screen and (min-width: 481px) {
+		width: 440px;
+		height: 320px;
+	}
+	@media screen and (min-width: 589px) {
+		width: 560px;
+		height: 320px;
+	}
+	@media screen and (min-width: 769px) {
+		width: 745px;
+		height: 420px;
+	}
+	@media screen and (min-width: 1201px) {
+		width: 960px;
+		height: 480px;
+	}
+	@media screen and (min-width: 1601px) {
+		width: 1420px;
+		height: 720px;
+	}
+	@media screen and (min-width: 1921px) {
+		width: 1600px;
+		height: 960px;
+	}
+}
+.subinfo {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	//height: $basic * 5;
+	background-color: rgba(0,0,0,.5);
+}
+.urgent-post_heading {
+	font-size: $basic * 1.5;
+	line-height: $basic * 2.25;
+	@media screen and (min-width: 769px) {
+		font-size: $basic * 2;
+		line-height: $basic * 3;
+	}
+}
+.urgent-post_descr {
+	text-align: left;
+	margin: $basic / 2 $basic;
+	text-indent: 0;
+	margin-top: 0;
+}

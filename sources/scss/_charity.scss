@@ -1,0 +1,53 @@
+#charity {
+	background-color: $color-dark;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	@media screen and (min-width: 769px) {
+		background-image: url(../img/charitybg1440.jpg);
+		padding: $basic * 3 0;
+	}
+	@media screen and (min-width: 1441px) {
+		background-image: url(../img/charitybg1920.jpg);
+	}
+	@media screen and (min-width: 1921px) {
+		background-image: url(../img/charitybg4k.jpg);
+	}
+}
+
+#charity .pad {
+	display: block;
+	@media screen and (min-width: 769px) {
+		display: flex;
+		flex-direction: column;
+		background: rgba(59,64,68,.8);
+		border-top: $basic / 4 solid $color-main;
+		border-bottom: $basic / 4 solid $color-main;
+		box-shadow: 0 $basic $basic * 2 rgba(59,64,68,.5);
+	}
+}
+
+.charity-btn {
+	display: block;
+	margin: $basic auto;
+	background: $color-main;
+	color: $color-bg;
+	line-height: $basic;
+	padding: $basic / 2 $basic * 2;
+	border-radius: $basic / 4;
+}
+
+.list-enchanced_item {
+	padding: $basic / 2;
+	@media screen and (min-width: 769px) {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.description {
+	border-bottom: $basic / 4 solid $color-main;
+	@media screen and (min-width: 769px) {
+		flex-grow: 1;
+	}
+}
