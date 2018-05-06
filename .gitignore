@@ -3,5 +3,5 @@ todo.xlsx
 .vscode
 node_modules/
 bower_components/
-lib/
+libraries/
 package-lock.json
