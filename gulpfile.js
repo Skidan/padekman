@@ -99,7 +99,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'pug', 'scripts'], function() {
 			'sources/js/libs.min.js', // берём минимизированные библиотеки,
 			'sources/js/styles.js' // и наш несжатый скрипт для сайта
 		])
-		.pipe(concat('styles-bundeled.js')) // сливаем их в один файл
+		.pipe(concat('styles.js')) // сливаем их в один файл
     .pipe(gulp.dest('public/js')); // и выгружаем в продакшн
  
     var buildHtml = gulp.src('sources/*.html') // Переносим HTML в продакшн
