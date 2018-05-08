@@ -5,3 +5,4 @@ node_modules/
 bower_components/
 libraries/
 package-lock.json
+_project_res/
