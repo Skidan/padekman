@@ -23,9 +23,32 @@ html(lang="en")
 										li.page_item 
 											a(href="#") Thanks to GULP
 										li.page_item 
-											a(href="#") WaЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ
+											a(href="#") WaЯЯЯЯЯ
 										li.page_item 
-											a(href="#") What a thrilllllllllllling story
+											a(href="#") What a thriling story
+								.page-navigation
+									form(action="get").filters
+										label.filter-group Animal type:
+											.control-group
+												input(type="checkbox" name="type" value="cat" id="catCheckBox")
+												label(for="catCheckBox") cats
+												br
+												input(type="checkbox" name="type" value="dog" id="dogCheckBox")
+												label(for="dogCheckBox") dogs
+												br
+										label.filter-group Animal's sex:
+											.control-group
+												input(type="checkbox" name="sex" value="male" id="maleCheckBox")
+												label(for="maleCheckBox") male
+												br
+												input(type="checkbox" name="sex" value="female" id="femaleCheckBox")
+												label(for="femaleCheckBox") female
+												br
+										label.filter-group Is animal castrated?
+											.control-group
+												input(type="checkbox" name="castrated" value="true" id="castratedCheckBox")
+												label(for="castratedCheckBox") castrated
+										button(type="submit").btn.btn-primary.btn-filter Filter
 							.content-posts
 								//- start of teaser
 								.fosterling
@@ -49,7 +72,6 @@ html(lang="en")
 											p.fosterling-story Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium expedita enim blanditiis voluptates at iste nemo quam assumenda! Quibusdam dolore delectus eum modi amet in voluptatibus, incidunt odio perferendis a repudiandae libero inventore velit blanditiis recusandae aperiam iure deserunt nam laboriosam corporis quisquam maiores molestias maxime! Recusandae repudiandae consequatur, sit officiis nobis saepe unde expedita fugiat sed laborum, corporis accusantium quo eum doloremque beatae consequuntur sint! Obcaecati voluptates veritatis praesentium excepturi error velit aspernatur, facilis earum quibusdam a, saepe vero provident doloremque rem, voluptatum explicabo nemo. Quidem dolor omnis facilis. Quae facere ea est amet maxime quis atque architecto.
 											.fosterling-options
 												hr
-												button(type="button" onclick="this.parentElement.parentElement.parentElement.nextSibling.nextSibling.classList.toggle('hidden')").btn Ask a question
 												a(href="#").btn.btn-primary More about Lucy &raquo;
 									.fosterling-contact.hidden
 										h4.fosterling-contacts-heading Contact us:

@@ -94,11 +94,14 @@
 	}
 }
 aside {
-	order: 2;
-	flex-basis: 180px;
-	flex-grow: 0;
-	flex-shrink: 0;
-	overflow: hidden;
+	
+	@media screen and (min-width: 769px) {
+		order: 2;
+		flex-basis: 180px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		overflow: hidden;
+	}
 }
 .content-posts {
 	order: 1;
@@ -577,13 +580,12 @@ h5.fosterling-contacts-heading {
 		height: calc(1600px / 5 * 3);
 	}
 }
-.fosterling-full-map {}
+
 .fosterling-full-story {
 	& p {
 		margin: $basic;
 	}
 }
-.fosterling-full-status {}
 
 
 .fosterling-params {
@@ -763,4 +765,67 @@ h5.fosterling-contacts-heading {
 	& h3, & p {
 		margin: $basic;
 	}
+}
+
+
+.filters {
+	background-color: $color-neutral;
+	& input, & label {
+		font-family: $font-regular;
+		margin-left: $basic / 4;
+	}
+	@media screen and (min-width: 769px) {
+		& input, & label {
+			font-family: $font-regular;
+			margin-left: $basic / 4;
+		}
+	}
+}
+.filter-group {
+	display: block;
+	color: darken($color-main, 15%);
+	padding: 8px;
+	padding-top: $basic;
+	& input, & label {
+		color: $color-bg;
+		font-family: $font-regular;
+		margin-left: $basic / 4;
+	}
+	& br {
+		display: none;
+	}
+	@media screen and (min-width: 769px) {
+		& input, & label {
+			color: $color-bg;
+			font-family: $font-regular;
+			margin-left: $basic / 4;
+		}
+		& br {
+			display: block;
+		}
+	}
+}
+.control-group {
+	display: inline-block;
+	& label, & input {
+		padding: $basic $basic / 4;
+		line-height: $basic * 3;
+	}
+	& label {
+		margin-right: $basic * 2;
+	}
+	@media screen and (min-width: 769px) {
+		display: block;
+		& label, & input {
+			padding: 0 $basic / 4;
+			line-height: $basic;
+		}
+		& label {
+			margin-right: 0;
+		}
+	}
+}
+.btn-filter {
+	margin: $basic;
+	color: darken($color-main, 15%);
 }

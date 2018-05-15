@@ -1604,22 +1604,23 @@ span.subheading {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
-aside {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
-  -webkit-flex-basis: 180px;
-      -ms-flex-preferred-size: 180px;
-          flex-basis: 180px;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  overflow: hidden; }
+@media screen and (min-width: 769px) {
+  aside {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-flex-basis: 180px;
+        -ms-flex-preferred-size: 180px;
+            flex-basis: 180px;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    overflow: hidden; } }
 
 .content-posts {
   -webkit-box-ordinal-group: 2;
@@ -2339,6 +2340,55 @@ h5.fosterling-contacts-heading {
 
 .heading-excerpt h3, .heading-excerpt p {
   margin: 16px; }
+
+.filters {
+  background-color: #a0a0a0; }
+  .filters input, .filters label {
+    font-family: "Roboto", sans-serif;
+    margin-left: 4px; }
+  @media screen and (min-width: 769px) {
+    .filters input, .filters label {
+      font-family: "Roboto", sans-serif;
+      margin-left: 4px; } }
+
+.filter-group {
+  display: block;
+  color: #0a7283;
+  padding: 8px;
+  padding-top: 16px; }
+  .filter-group input, .filter-group label {
+    color: #ebebeb;
+    font-family: "Roboto", sans-serif;
+    margin-left: 4px; }
+  .filter-group br {
+    display: none; }
+  @media screen and (min-width: 769px) {
+    .filter-group input, .filter-group label {
+      color: #ebebeb;
+      font-family: "Roboto", sans-serif;
+      margin-left: 4px; }
+    .filter-group br {
+      display: block; } }
+
+.control-group {
+  display: inline-block; }
+  .control-group label, .control-group input {
+    padding: 16px 4px;
+    line-height: 48px; }
+  .control-group label {
+    margin-right: 32px; }
+  @media screen and (min-width: 769px) {
+    .control-group {
+      display: block; }
+      .control-group label, .control-group input {
+        padding: 0 4px;
+        line-height: 16px; }
+      .control-group label {
+        margin-right: 0; } }
+
+.btn-filter {
+  margin: 16px;
+  color: #0a7283; }
 
 .noscroll {
   overflow-y: hidden; }
