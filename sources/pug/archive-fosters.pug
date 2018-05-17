@@ -27,7 +27,7 @@ html(lang="en")
 										li.page_item 
 											a(href="#") What a thriling story
 								.page-navigation
-									form(action="get").filters
+									form(method="get").filters
 										label.filter-group Animal type:
 											.control-group
 												input(type="checkbox" name="type" value="cat" id="catCheckBox")
@@ -48,7 +48,7 @@ html(lang="en")
 											.control-group
 												input(type="checkbox" name="castrated" value="true" id="castratedCheckBox")
 												label(for="castratedCheckBox") castrated
-										button(type="submit").btn.btn-primary.btn-filter Filter
+										button(type="submit" value="").btn.btn-primary.btn-filter Filter
 							.content-posts
 								//- start of teaser
 								.fosterling
