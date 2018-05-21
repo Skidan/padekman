@@ -13,7 +13,6 @@
 .logofill {
 	fill: $color-bg;
 }
-
 // HAMBURGER
 //button styles
 .menu_icon_dash {
@@ -27,7 +26,6 @@
 	width: $basic * 2.5;
 	height: $basic * 2.5;
 	padding: $basic * .25 0;
-	// outline: $test;
 }
 #menu_icon:hover {
   cursor: pointer;
@@ -47,7 +45,6 @@
     opacity: 0;
   }
 }
-
 // modifiers for icon mixin
 .lost {
   background-image: url(../img/lost.svg) !important;
@@ -67,7 +64,6 @@
 .house {
   background-image: url(../img/house.svg) !important;
 }
-
 #mouse {
 	width: $basic * 3;
   height: $basic * 3;
@@ -110,7 +106,6 @@
     opacity: 0;
   }
 }
-
 .arrow {
   cursor: pointer;
   margin: auto auto;

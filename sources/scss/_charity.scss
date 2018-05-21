@@ -14,7 +14,6 @@
 		background-image: url(../img/charitybg4k.jpg);
 	}
 }
-
 #charity .pad {
 	display: block;
 	@media screen and (min-width: 769px) {
@@ -26,7 +25,6 @@
 		box-shadow: 0 $basic $basic * 2 rgba(59,64,68,.5);
 	}
 }
-
 .charity-btn {
 	display: block;
 	margin: $basic auto;
@@ -36,7 +34,6 @@
 	padding: $basic / 2 $basic * 2;
 	border-radius: $basic / 4;
 }
-
 .list-enchanced_item {
 	padding: $basic / 2;
 	@media screen and (min-width: 769px) {
@@ -44,7 +41,6 @@
 		flex-direction: row;
 	}
 }
-
 .description {
 	border-bottom: $basic / 4 solid $color-main;
 	@media screen and (min-width: 769px) {

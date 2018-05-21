@@ -7,25 +7,21 @@ html {
 	width: 100%;
 	height: 100%;
 }
-
 body {
 	width: 100%;
 	height: 100%;
 	min-width: 300px;
 	background-color: $color-bg;
 }
-
 section {
 	display: block;
 	width: 100%;
 }
-
 article {
 	display: block;
 	width: calc(100% - 16px);
 	margin: 0 $basic / 2;
 }
-
 h1 {
 	font-family: $font-heading;
 	font-weight: 400;
@@ -40,7 +36,6 @@ h1 {
 		color: $color-main;
 	}
 }
-
 h2, h2 span {
 	font-family: $font-heading;
 	font-weight: 700;
@@ -48,7 +43,6 @@ h2, h2 span {
 	line-height: $basic * 3;
 	color: $color-main;
 }
-
 h3 {
 	font-family: $font-regular;
 	font-weight: 400;
@@ -69,8 +63,6 @@ h5 {
 	font-weight: 400;
 	font-family: $font-regular;
 }
-//h6 {}
-
 hr {
 	width: 80%;
 	height: 2px;
@@ -87,21 +79,18 @@ hr {
 		background: $color-neutral;
 	}
 }
-
 p {
 	font-family: $font-regular;
 	color: $color-dark;
 	line-height: $basic * 1.5;
 	text-indent: $basic;
 }
-
 a {
 	font-family: $font-regular;
 	text-decoration: none;
 	text-shadow: none;
 	transition: color .2s, text-shadow .2s;
 	color: $color-main;
-	
 	padding: 0;
 	margin: 0;
 	&:hover {
@@ -126,7 +115,6 @@ button {
 	-webkit-appearance: none;
 	appearance: none;
 }
-
 figure {
 	padding: $basic;
 	margin: $basic / 2;
@@ -134,7 +122,6 @@ figure {
 	border: 1px solid $color-neutral;
 	border-radius: $basic / 2;
 }
-
 figcaption {
 	font-family: $font-regular;
 	font-size: $basic;
@@ -155,29 +142,22 @@ main, footer {
 main {
 	height: 100%;
 }
-
 span {
 	color: $color-neutral;
 	font-family: $font-regular;
 }
-
 img {
   width: 100%;
   image-rendering: -webkit-optimize-contrast;
 }
-
-
 textarea {
 	font-size: $basic;
 }
-
-
 ul {
 	list-style-type: none;
 	margin-left: 0;
 	padding-left: 0;
 }
-
 .content-posts ol, .content-posts ul {
 	font-family: $font-regular;
 	font-size: $basic;

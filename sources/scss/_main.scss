@@ -7,20 +7,16 @@
 }
 
 @import "header";
-
-
 #main {
   order: 2;
   flex-grow: 1;
 }
 @import "topper";
-
 #feedback {
   @media screen and (min-width: 769px) {
 		padding: $basic * 3 0;
 	}
 }
-
 @import "urgent";
 
 @import "charity";
@@ -54,13 +50,11 @@
     transform: translatex(-50%) translatey(-50%);
   }
 }
-
 .section-heading {
 	text-align: center;
   font-size: $basic * 3;
   line-height: $basic * 6;
 }
-
 .container {
   width: calc(100% - 16px);
 	margin: 0 auto;
