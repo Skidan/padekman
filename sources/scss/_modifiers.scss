@@ -8,8 +8,6 @@
 .menuheight {
   height: 292px;
 }
-
-
 // colors depending on section bg
 .bg-dark {
   background-color: $color-dark;
@@ -37,22 +35,18 @@
     color: $color-neutral;
   }
 }
-
 .hidden {
   display: none;
 }
 .hide {
   height: 0 !important;
 }
-
 // WP overwritings
 .page-numbers {
   display: inline-block;
   vertical-align: top;
   font-size: $basic;
-  //line-height: $basic * 1.75;
   padding: $basic / 4 $basic / 2;
-  //background-color: darken($color-bg, 10%);
   border-radius: $basic / 4;
   margin: $basic / 4;
   border: 1px solid $color-main;
@@ -62,7 +56,6 @@
   background-color: $color-main;
   border: 1px solid $color-main;
 }
-
 // COMMENTS SECTION
 .comments-list {
   border-bottom: 1px dashed $color-neutral;
@@ -93,9 +86,7 @@ img.avatar {
   @media screen and (min-width: 589px) {
     padding-top: $basic;
   }
-  //border: 1px solid darken($color-bg, 15%);
 }
-
 .parent {
   border: 1px solid darken($color-bg, 10%);
   overflow: hidden;
@@ -116,24 +107,6 @@ img.avatar {
     margin-left: $basic;
     box-shadow: 0 0 $basic rgba(0,0,0,.1);
   }
-  // &::before {
-  //   content: '\f0a9';
-  //   font-family: FontAwesome;
-  //   font-size: $basic;
-  //   color: $color-main;
-
-  // }
-}
-.depth-1 {
-  //background-color: darken($color-bg, 5%);
-}
-.depth-2 {
-  //background-color: darken($color-bg, 5%);
-  //border: 1px solid darken($color-bg, 10%);
-}
-.depth-3 {
-  //background-color: darken($color-bg, 7%);
-  //border: 1px solid darken($color-bg, 15%);
 }
 .even {
   background: rgba(220,220,220,0.5);
@@ -148,8 +121,6 @@ img.avatar {
   display: inline-block;
   font-family: $font-regular;
   font-size: $basic * 1.25;
-  //padding: $basic / 6;
-  //line-height: $basic * 3;
   color: $color-main;
   font-style: normal;
   font-weight: 700;
@@ -162,7 +133,6 @@ img.avatar {
     font-size: $basic * 1.5;
     padding: $basic * .75 0;
   }
-  
 }
 .vcard cite {
   padding-left: 0;
@@ -178,11 +148,9 @@ img.avatar {
     font-size: $basic * 1.25;
   }
 }
-
 #respond p {
   text-indent: 0;
 }
-
 .reply {
   padding: $basic / 2 0;
 }
@@ -213,7 +181,6 @@ img.avatar {
   display: block;
   color: $color-neutral;
 }
-
 #submit {
   display: inline-block;
   padding: $basic / 2 $basic;
@@ -234,21 +201,17 @@ img.avatar {
 #comment {
   display: block;
   width: 100%;
-
 }
 .required {
   color: $color-contrast;
 }
-
 #author, #email, #url {
   display: inline-block;
   padding: $basic / 4;
 }
-
 .testbox {
   outline: 1px dashed red;
 }
-
 .subactions {
   padding: 0 $basic / 2 $basic $basic / 2;
   align: center;
