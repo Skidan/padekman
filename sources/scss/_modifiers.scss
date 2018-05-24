@@ -57,9 +57,6 @@
   border: 1px solid $color-main;
 }
 
-span.says {
-  padding-left: $basic;
-}
 // COMMENTS SECTION
 .comments-list {
   border-bottom: 1px dashed $color-neutral;
@@ -138,6 +135,9 @@ img.avatar {
     font-size: $basic * 1.5;
     padding: $basic * .75 0;
   }
+}
+.vcard span.says {
+  padding-left: $basic;
 }
 .vcard cite {
   padding-left: 0;
