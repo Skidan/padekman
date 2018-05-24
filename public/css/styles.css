@@ -2440,6 +2440,9 @@ h5.fosterling-contacts-heading {
   background-color: #10b0ca;
   border: 1px solid #10b0ca; }
 
+span.says {
+  padding-left: 16px; }
+
 .comments-list {
   border-bottom: 1px dashed #a0a0a0;
   list-style-type: none; }

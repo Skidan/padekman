@@ -56,6 +56,10 @@
   background-color: $color-main;
   border: 1px solid $color-main;
 }
+
+span.says {
+  padding-left: $basic;
+}
 // COMMENTS SECTION
 .comments-list {
   border-bottom: 1px dashed $color-neutral;
