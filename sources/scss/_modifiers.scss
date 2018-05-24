@@ -59,6 +59,7 @@
 // COMMENTS SECTION
 .comments-list {
   border-bottom: 1px dashed $color-neutral;
+  list-style-type: none;
 }
 img.avatar {
   display: none;
@@ -161,7 +162,9 @@ img.avatar {
   border: 1px solid $color-main;
   color: $color-main;
   border-radius: $basic / 4;
-  transition: color .3s, background .3s;
+  transition: 
+    color .3s, 
+    background .3s;
   &:hover {
     background: $color-main;
     color: $color-bg;
@@ -188,7 +191,9 @@ img.avatar {
   border: 1px solid $color-main;
   color: $color-main;
   border-radius: $basic / 4;
-  transition: color .3s, background .3s;
+  transition:
+    color .3s, 
+    background .3s;
   &:hover {
     background: $color-main;
     color: $color-bg;

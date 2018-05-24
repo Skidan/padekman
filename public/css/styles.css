@@ -1184,7 +1184,7 @@ span.subheading {
 #req {
   background-color: #3b4044; }
 
-.smplst a {
+#footer ul li.page_item a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   text-shadow: none;
@@ -1194,10 +1194,10 @@ span.subheading {
   color: #10b0ca;
   padding: 0;
   margin: 0; }
-  .smplst a:hover {
+  #footer ul li.page_item a:hover {
     color: #ebebeb;
     text-decoration: none; }
-  .smplst a:active {
+  #footer ul li.page_item a:active {
     outline: none;
     text-shadow: 0 0 8px #10b0ca;
     color: #3b4044;
@@ -2441,7 +2441,8 @@ h5.fosterling-contacts-heading {
   border: 1px solid #10b0ca; }
 
 .comments-list {
-  border-bottom: 1px dashed #a0a0a0; }
+  border-bottom: 1px dashed #a0a0a0;
+  list-style-type: none; }
 
 img.avatar {
   display: none; }
@@ -2547,9 +2548,9 @@ img.avatar {
   color: #10b0ca;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  -webkit-transition: color .3s, background .3s;
-  -o-transition: color .3s, background .3s;
-  transition: color .3s, background .3s; }
+  -webkit-transition: color .3s,  background .3s;
+  -o-transition: color .3s,  background .3s;
+  transition: color .3s,  background .3s; }
   .comment-reply-link:hover {
     background: #10b0ca;
     color: #ebebeb; }
@@ -2575,9 +2576,9 @@ img.avatar {
   color: #10b0ca;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  -webkit-transition: color .3s, background .3s;
-  -o-transition: color .3s, background .3s;
-  transition: color .3s, background .3s; }
+  -webkit-transition: color .3s,  background .3s;
+  -o-transition: color .3s,  background .3s;
+  transition: color .3s,  background .3s; }
   #submit:hover {
     background: #10b0ca;
     color: #ebebeb; }
